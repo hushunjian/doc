@@ -1,0 +1,70 @@
+{
+	"id": "20f8973d-a1f8-15c6-456a-0758c959aa87",
+	"name": "获取直播封面",
+	"description": "",
+	"order": [
+		"86913456-ca12-1ad6-3374-ccffa93beb0a"
+	],
+	"folders": [],
+	"timestamp": 1504669056771,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "86913456-ca12-1ad6-3374-ccffa93beb0a",
+			"headers": "",
+			"url": "https://{{host}}/api/live/liveCover",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7839",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20053;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504669234437,
+			"name": "api.live.liveCover",
+			"description": "",
+			"collectionId": "20f8973d-a1f8-15c6-456a-0758c959aa87",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,77 @@
+{
+	"id": "6349eefa-2faf-319a-77c6-0e73f602a1ae",
+	"name": "情绪页面选择情绪",
+	"description": "",
+	"order": [
+		"788d89b6-a490-b266-562e-36d4d0c8a433"
+	],
+	"folders": [],
+	"timestamp": 1504770090076,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "788d89b6-a490-b266-562e-36d4d0c8a433",
+			"headers": "",
+			"url": "https://{{host}}/api/user/getEmotionInfoByValue",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6349eefa-2faf-319a-77c6-0e73f602a1ae",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "freeValue",
+					"value": "-55",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "happyValue",
+					"value": "50",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.user.getEmotionInfoByValue",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504770328593,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

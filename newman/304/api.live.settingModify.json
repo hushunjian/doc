@@ -1,0 +1,83 @@
+{
+	"id": "8a870a0a-a2fb-b461-2351-722842074b7d",
+	"name": "王国设置编辑王国名字 copy",
+	"description": "",
+	"order": [
+		"d0a61a49-3912-4605-0b42-36241ebfc573"
+	],
+	"folders": [],
+	"timestamp": 1504680395544,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "d0a61a49-3912-4605-0b42-36241ebfc573",
+			"headers": "",
+			"url": "https://{{host}}/api/live/settingModify",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7880",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "action",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "params",
+					"value": "37878d48-49ec-462c-841b-c6240c2bf9a3-1505701740827",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1505959136057,
+			"name": "api.live.settingModify.shezhiwanggming",
+			"description": "",
+			"collectionId": "8a870a0a-a2fb-b461-2351-722842074b7d",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,82 @@
+{
+	"id": "5e1902c8-4d92-aea8-f7e2-cda9895d87b5",
+	"name": "王国内容更新数量（配合王国详情）",
+	"description": "",
+	"order": [
+		"c48e4cdb-76b2-d5fc-d89b-cac06240993f"
+	],
+	"folders": [],
+	"timestamp": 1504667859374,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "c48e4cdb-76b2-d5fc-d89b-cac06240993f",
+			"headers": "",
+			"url": "https://{{host}}/api/live/getUpdate",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7839",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "20",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20087;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504689068966,
+			"name": "api.live.getUpdate",
+			"description": "",
+			"collectionId": "5e1902c8-4d92-aea8-f7e2-cda9895d87b5",
+			"responses": []
+		}
+	]
+}

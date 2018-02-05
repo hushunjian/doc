@@ -1,0 +1,69 @@
+{
+	"id": "cbaa8a04-bf45-8cb3-97cc-07b3b8ad1a48",
+	"name": "user接口",
+	"description": "会一直调",
+	"order": [
+		"0253e17e-dac3-85d3-7584-44d200f0295b"
+	],
+	"folders": [],
+	"timestamp": 1504668940426,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0253e17e-dac3-85d3-7584-44d200f0295b",
+			"headers": "",
+			"url": "https://{{host}}/api/user/getUser",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "targetUid",
+					"value": "12360",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504669008909,
+			"name": "api.user.getUser",
+			"description": "",
+			"collectionId": "cbaa8a04-bf45-8cb3-97cc-07b3b8ad1a48",
+			"responses": []
+		}
+	]
+}

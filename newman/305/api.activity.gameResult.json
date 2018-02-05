@@ -1,0 +1,77 @@
+{
+	"id": "8a5c068d-3a2c-794b-529b-ab0a943a77ca",
+	"name": "游戏活动游戏结果接口",
+	"description": "",
+	"order": [
+		"10cf5789-13af-b93c-a2dc-138a73e1ab96"
+	],
+	"folders": [],
+	"timestamp": 1507711736294,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "10cf5789-13af-b93c-a2dc-138a73e1ab96",
+			"headers": "",
+			"url": "https://{{host}}/api/activity/gameResult",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "8a5c068d-3a2c-794b-529b-ab0a943a77ca",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gameId",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "record",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.activity.gameResult",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507711757472,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

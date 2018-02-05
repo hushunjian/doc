@@ -1,0 +1,70 @@
+{
+	"id": "f967791a-552c-c3d4-e7e8-0bd170e0cf56",
+	"name": "首页-热点",
+	"description": "",
+	"order": [
+		"8f0d7033-b635-2eb6-48c5-aaceb3beb187"
+	],
+	"folders": [],
+	"timestamp": 1504592329147,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "8f0d7033-b635-2eb6-48c5-aaceb3beb187",
+			"headers": "",
+			"url": "https://{{host}}/api/home/hotList",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "{{sinceId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"jsonData is 200\"] = jsonData.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504599519990,
+			"name": "api.home.hotList",
+			"description": "",
+			"collectionId": "f967791a-552c-c3d4-e7e8-0bd170e0cf56",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,118 @@
+{
+	"id": "d21af218-47dd-d711-4010-2676c8652c43",
+	"name": "个人王国收录",
+	"description": "",
+	"order": [
+		"41ad05cc-e889-c225-3240-c31d457522f1"
+	],
+	"folders": [],
+	"timestamp": 1504676233880,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "41ad05cc-e889-c225-3240-c31d457522f1",
+			"headers": "",
+			"url": "https://{{host}}/api/live/kingdomSearch",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "updateTime",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "searchUid",
+					"value": "67926",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "allowCore",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "exceptTopicId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "26452",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "searchRights",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "searchScene",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510111054555,
+			"name": "api.live.kingdomSearch.waibu",
+			"description": "",
+			"collectionId": "d21af218-47dd-d711-4010-2676c8652c43",
+			"responses": []
+		}
+	]
+}

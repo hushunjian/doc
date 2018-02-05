@@ -1,0 +1,88 @@
+{
+	"id": "05cb733d-85b8-e255-3bb3-bf815b5f0acf",
+	"name": "加入王国按钮操作",
+	"description": "",
+	"order": [
+		"e143d17e-ba29-7994-6cb7-1ad0b90a4790"
+	],
+	"folders": [],
+	"timestamp": 1504601891217,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "e143d17e-ba29-7994-6cb7-1ad0b90a4790",
+			"headers": "",
+			"url": "https://{{host}}/api/sns/subscribed",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "verison",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "8047",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "bottomId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "action",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{channel}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504603192346,
+			"name": "api.sns.subscribed.dingyue",
+			"description": "",
+			"collectionId": "05cb733d-85b8-e255-3bb3-bf815b5f0acf",
+			"responses": []
+		}
+	]
+}

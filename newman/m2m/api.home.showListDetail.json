@@ -1,0 +1,77 @@
+{
+	"id": "2db37368-7787-5b7e-86cb-ebc4db4d551f",
+	"name": "王国价值最高",
+	"description": "",
+	"order": [
+		"022b6908-5860-da8b-df66-5050e17aaadb"
+	],
+	"folders": [],
+	"timestamp": 1504603009788,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "022b6908-5860-da8b-df66-5050e17aaadb",
+			"headers": "",
+			"url": "https://{{host}}/api/home/showListDetail",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "2db37368-7787-5b7e-86cb-ebc4db4d551f",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "{{sinceId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "listId",
+					"value": "42",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.home.showListDetail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504603130896,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

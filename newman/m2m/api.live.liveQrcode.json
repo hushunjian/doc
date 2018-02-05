@@ -1,0 +1,71 @@
+{
+	"id": "cabe33af-3d2f-693c-b908-1790c1391787",
+	"name": "分享二维码名片获取",
+	"description": "",
+	"order": [
+		"f221be7c-4026-99b4-944d-d68ff796fff2"
+	],
+	"folders": [],
+	"timestamp": 1504681210611,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "f221be7c-4026-99b4-944d-d68ff796fff2",
+			"headers": "",
+			"url": "https://{{host}}/api/live/liveQrcode",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "cabe33af-3d2f-693c-b908-1790c1391787",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7880",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.live.liveQrcode",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504681349641,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20058;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

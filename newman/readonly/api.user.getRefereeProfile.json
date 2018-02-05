@@ -1,0 +1,115 @@
+{
+	"id": "4536eaec-5750-5ac2-9d68-15a71e2f69cd",
+	"name": "邀请朋友",
+	"description": "",
+	"order": [
+		"b9c51122-d159-0e95-88a5-2025bd644690",
+		"71b85078-8b88-4846-5a3e-42c1339da027"
+	],
+	"folders": [],
+	"timestamp": 1504766871806,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "71b85078-8b88-4846-5a3e-42c1339da027",
+			"headers": "",
+			"url": "https://{{host}}/api/user/qrcoe",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4536eaec-5750-5ac2-9d68-15a71e2f69cd",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.user.qrcoe",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504767312603,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20058;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b9c51122-d159-0e95-88a5-2025bd644690",
+			"headers": "",
+			"url": "https://{{host}}/api/user/getRefereeProfile",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510120010356,
+			"name": "api.user.getRefereeProfile",
+			"description": "",
+			"collectionId": "4536eaec-5750-5ac2-9d68-15a71e2f69cd",
+			"responses": []
+		}
+	]
+}

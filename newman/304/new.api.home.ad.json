@@ -1,0 +1,70 @@
+{
+	"id": "d77a24aa-9f3a-0830-c422-9863d42ec3a1",
+	"name": "new.api.home.ad",
+	"description": "",
+	"order": [
+		"3041ac35-610b-a89d-50a4-458e830f8619"
+	],
+	"folders": [],
+	"timestamp": 1505789173624,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3041ac35-610b-a89d-50a4-458e830f8619",
+			"headers": "",
+			"url": "https://{{host}}/api/home/ad",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Response time is less than 300ms\"] = responseTime < 300;\n\ntests[\"Body matches topicInternalStatus\"] = responseBody.has(\"topicInternalStatus\");",
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1505788698723,
+			"name": "new.api.home.ad",
+			"description": "",
+			"collectionId": "d77a24aa-9f3a-0830-c422-9863d42ec3a1",
+			"responses": []
+		}
+	]
+}

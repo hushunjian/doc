@@ -1,0 +1,71 @@
+{
+	"id": "ab6219e6-5bf1-0f69-3f75-b17275d805c4",
+	"name": "首页-广场",
+	"description": "",
+	"order": [
+		"45c6d007-e90e-fcfc-e456-5151f7ffdae0"
+	],
+	"folders": [],
+	"timestamp": 1504594160543,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "45c6d007-e90e-fcfc-e456-5151f7ffdae0",
+			"headers": "",
+			"url": "https://{{host}}/api/home/newest",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "-1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510109411346,
+			"name": "api.home.newest",
+			"description": "",
+			"collectionId": "ab6219e6-5bf1-0f69-3f75-b17275d805c4",
+			"responses": []
+		}
+	]
+}

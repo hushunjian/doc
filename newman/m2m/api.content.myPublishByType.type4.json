@@ -1,0 +1,88 @@
+{
+	"id": "95f62a23-d8b2-7660-7564-972e6de76ad8",
+	"name": "加入的王国",
+	"description": "",
+	"order": [
+		"3db4bd06-0bee-a273-cb51-800a6cd8f123"
+	],
+	"folders": [],
+	"timestamp": 1504601129706,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3db4bd06-0bee-a273-cb51-800a6cd8f123",
+			"headers": "",
+			"url": "https://{{host}}/api/content/myPublishByType",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "customerId",
+					"value": "{{customerId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "updateTime",
+					"value": "9223372036854775807",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504602136542,
+			"name": "api.content.myPublishByType.type4",
+			"description": "",
+			"collectionId": "95f62a23-d8b2-7660-7564-972e6de76ad8",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,82 @@
+{
+	"id": "df26ab67-a13a-86a3-9761-8c112b609284",
+	"name": "标签详情",
+	"description": "",
+	"order": [
+		"13f0412a-a6a3-4f9f-53ff-335de5509c1a"
+	],
+	"folders": [],
+	"timestamp": 1504597108095,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "13f0412a-a6a3-4f9f-53ff-335de5509c1a",
+			"headers": "",
+			"url": "https://{{host}}/api/content/tagDetail",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tagName",
+					"value": "建筑师大本营",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tagId",
+					"value": "1179",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Response time is less than 500ms\"] = responseTime < 500;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510110314741,
+			"name": "api.content.tagDetail.new",
+			"description": "",
+			"collectionId": "df26ab67-a13a-86a3-9761-8c112b609284",
+			"responses": []
+		}
+	]
+}

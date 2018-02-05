@@ -1,0 +1,75 @@
+{
+	"id": "3cb8ef5c-0bea-2fbc-ebbe-8e8a7165a895",
+	"name": "关注",
+	"description": "",
+	"order": [
+		"690660ab-e634-afc4-e5d4-ba2b93e6ca83"
+	],
+	"folders": [],
+	"timestamp": 1504598296168,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "690660ab-e634-afc4-e5d4-ba2b93e6ca83",
+			"headers": "",
+			"url": "https://{{host}}/api/sns/follow",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "targetUid",
+					"value": "12401",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "action",
+					"value": "{{action}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20039;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504602443769,
+			"name": "api.sns.follow.guanzhu",
+			"description": "",
+			"collectionId": "3cb8ef5c-0bea-2fbc-ebbe-8e8a7165a895",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,64 @@
+{
+	"id": "d157daeb-e4af-eefd-7ff9-9ffd61a96383",
+	"name": "获取个人等级",
+	"description": "",
+	"order": [
+		"899a2d12-d9af-ecb1-40d7-0af5997c0c5c"
+	],
+	"folders": [],
+	"timestamp": 1504603355129,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "899a2d12-d9af-ecb1-40d7-0af5997c0c5c",
+			"headers": "",
+			"url": "https://{{host}}/api/user/getMyLevel",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510113040745,
+			"name": "api.user.getMyLevel",
+			"description": "",
+			"collectionId": "d157daeb-e4af-eefd-7ff9-9ffd61a96383",
+			"responses": []
+		}
+	]
+}

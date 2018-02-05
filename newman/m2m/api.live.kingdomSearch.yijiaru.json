@@ -1,0 +1,123 @@
+{
+	"id": "8cd4bb52-7db0-1f5d-3149-f148ffd92a7c",
+	"name": "个人王国已加入",
+	"description": "",
+	"order": [
+		"2e387b58-8897-dcf1-774a-870a39060513"
+	],
+	"folders": [],
+	"timestamp": 1504678233050,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2e387b58-8897-dcf1-774a-870a39060513",
+			"headers": "",
+			"url": "https://{{host}}/api/live/kingdomSearch",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "updateTime",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "srearchUid",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "allowCore",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "exceptTopicId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7880",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicType",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "searchRights",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "keyword",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "searchScene",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504678657935,
+			"name": "api.live.kingdomSearch.yijiaru",
+			"description": "",
+			"collectionId": "8cd4bb52-7db0-1f5d-3149-f148ffd92a7c",
+			"responses": []
+		}
+	]
+}

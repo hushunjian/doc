@@ -1,0 +1,94 @@
+{
+  "id": "d8f927c4-3f8c-e7a4-f9b6-a581a51886a7",
+  "name": "environment_test",
+  "values": [
+    {
+      "key": "uid",
+      "value": "12360",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "4a828b6a322a4c5ca6666dc23bbb4939",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "host",
+      "value": "test2.me-to-me.com",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "is_skip",
+      "value": "ok",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "userName",
+      "value": "18807408202",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "encrypt",
+      "value": "123456",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "sinceId",
+      "value": "-1",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "version",
+      "value": "3.0.2.0510",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "page",
+      "value": "1",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "pageSize",
+      "value": "20",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "action",
+      "value": "0",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "channel",
+      "value": "metome",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "customerId",
+      "value": "446",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "cid",
+      "value": "8446",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "timestamp": 1504606202814,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2017-09-08T05:59:15.835Z",
+  "_postman_exported_using": "Postman/4.9.3"
+}

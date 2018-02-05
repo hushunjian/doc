@@ -1,0 +1,41 @@
+digraph G {
+    graph [
+        autosize=false,
+        nodesep=13.0
+    ];
+    compound=true;
+    subgraph cluster_how_to_use_tag {
+        label="如何打标签";
+        style="filled";
+        color="lightgrey";
+        subgraph cluster_user_tag {
+            label="用户标签";
+            color=grey;
+            king_tag [label="国王自己打的标签", style=filled, fillcolor=white; fixedsize=true; width=3;]
+        }
+        subgraph cluster_m2m_tag {
+            label="米汤标签";
+            color="grey";
+            user_action_tag [label="用户行为产生的标签", style=filled, fillcolor=firebrick; fixedsize=true; width=3;]
+            extracted_by_algorithm_tag [label="从内容里利用算法提取的标签", style=filled, fillcolor=firebrick; fixedsize=true; width=3;]
+        }
+        subgraph cluster_cms_user_tag {
+            label="给用户打标签";
+            color="grey";
+            cms_search_user_tag  [label="搜索用户",       style=filled, fillcolor=white; fixedsize=true; width=3; height=.5; rotate=90;]
+            cms_add_user_tag     [label="添加用户标签",   style=filled, fillcolor=white; fixedsize=true; width=3; rankseq="1.2 equally";]
+            cms_remove_user_tag  [label="删除用户标签",   style=filled, fillcolor=white; fixedsize=true; width=3;]
+            cms_bulk_process_tag [label="批处理用户标签", style=filled, fillcolor=white; fixedsize=true; width=3;]
+        }
+    }
+    start [shape=Mdiamond; rankseq=3;];
+    end [shape=Msquare];
+    start -> king_tag [lhead=cluster_how_to_use_tag, nodeseq=5.0;];
+    king_tag -> user_action_tag [ltail=cluster_user_tag, lhead=cluster_m2m_tag, dir=none; color=none];
+    user_action_tag -> extracted_by_algorithm_tag [dir=none; color=none];
+    extracted_by_algorithm_tag -> cms_search_user_tag [dir=none; color=none];
+    cms_search_user_tag -> cms_add_user_tag [dir=none; color=none];
+    cms_add_user_tag -> cms_remove_user_tag[dir=none; color=none];
+    cms_remove_user_tag -> cms_bulk_process_tag[dir=none; color=none];
+    cms_bulk_process_tag -> end [ltail=cluster_how_to_use_tag];
+}

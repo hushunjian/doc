@@ -1,0 +1,99 @@
+{
+	"id": "b1a1fe16-6907-54d5-3113-520d1a6bbd35",
+	"name": "王国详情创建抽奖",
+	"description": "",
+	"order": [
+		"12e93930-b3b6-b52d-5671-68b4bc1d0172"
+	],
+	"folders": [],
+	"timestamp": 1504683872087,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "12e93930-b3b6-b52d-5671-68b4bc1d0172",
+			"headers": "",
+			"url": "https://{{host}}/api/live/createLottery",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "source",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7880",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "快来抽奖了",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "summary",
+					"value": "抽奖了聊了聊   ",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "winNumber",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "endTime",
+					"value": "1507132800000",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504864174516,
+			"name": "api.live.createLottery",
+			"description": "",
+			"collectionId": "b1a1fe16-6907-54d5-3113-520d1a6bbd35",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"id": "5794e9ca-9255-bcf0-560c-9db074169170",
+	"name": "王国互动新",
+	"description": "",
+	"order": [
+		"d7b08754-5c60-cd86-79d1-16d518bc1149"
+	],
+	"folders": [],
+	"timestamp": 1505963679701,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "d7b08754-5c60-cd86-79d1-16d518bc1149",
+			"headers": "",
+			"url": "https://test2.me-to-me.com/api/live/getMyTopic",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "updateTime",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "tests[\"Response time is less than 300ms\"] = responseTime < 300;\n\ntests[\"Body matches kcName\"] = responseBody.has(\"kcName\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1505963771536,
+			"name": "api.live.getMyTopic",
+			"description": "",
+			"collectionId": "5794e9ca-9255-bcf0-560c-9db074169170",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"id": "ec652b75-3436-8c9c-6873-a3735ca5e0b8",
+	"name": "搜索",
+	"description": "",
+	"order": [
+		"962659a1-e1a8-d559-f9d7-12edd12d5963"
+	],
+	"folders": [],
+	"timestamp": 1504596619065,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "962659a1-e1a8-d559-f9d7-12edd12d5963",
+			"headers": "",
+			"url": "https://{{host}}/api/search/search",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "keyword",
+					"value": "美女呀",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "searchType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contentType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "{{page}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "{{pageSize}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504599447691,
+			"name": "api.search.search",
+			"description": "",
+			"collectionId": "ec652b75-3436-8c9c-6873-a3735ca5e0b8",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,48 @@
+digraph G {
+    graph [
+        compound=true;
+        center=true;
+        charset="UTF-8";
+        rankdir=TB,
+    ];
+    node [
+        shape=record,
+        style="filled, solid",
+        fontname="Migu 1M",
+        color=black;
+        fontsize=12
+        
+    ];
+    edge [
+        color=white
+    ];
+
+    subgraph cluster_how_to_make_tag {
+        label="给用户打标签";
+        colorscheme = rdylbu11;
+        style = "solid,filled";
+        fillcolor = "10:9:10:11";
+        
+        node [style=filled,color=white];
+        user_tag     [fillcolor=orange, width=4; label="用户标签|{国王自己打的王国标签\l|用户自己选择的喜欢\l或不喜欢的标签\l|用户兴趣的属性\l}"]; 
+        m2m_tag      [fillcolor=orange, width=4; label="米汤标签|{用户行为产生的标签\l|从内容里利用算法提取的标签\l}"]; 
+        operator_tag [fillcolor=orange, width=4; label="运营人员处理标签\nCMS|{优质标签确定和筛选\l|优质用户确定和筛选\l|优质王国确定和筛选\l|搜索王国\l|添加王国标签\l|删除王国标签\l|批处理王国标签\l|搜索用户\l|添加用户标签\l|删除用户标签\l|批处理用户标签\l}"]; 
+    }
+
+    subgraph cluster_how_to_use_tag {
+        label="怎样使用标签";
+        colorscheme = rdylgn11;
+        style = "solid,filled";
+        fillcolor = "10:9:10:11";
+        
+        preprocess_tag [fillcolor=chocolate, width=4; label="预处理标签|{高频词标签\l|停止词标签\l|同义词标签\l|观点标签 如:无聊\l}"];
+        evaluate_tag   [fillcolor=chocolate, width=4; label="量化标签|{王国数\l|用户数\l|热度\l|其他维度\l}"];
+        group_tag      [fillcolor=chocolate, width=4; label="标签分组\nCMS|{地域组\l|游戏组\l|时间组\l|其他组\l}"];
+    }
+
+    user_tag -> m2m_tag             [dir=none, penwidth=0];
+    m2m_tag -> operator_tag         [dir=none, penwidth=0];
+
+    preprocess_tag -> evaluate_tag  [dir=none, penwidth=0];
+    evaluate_tag -> group_tag       [dir=none, penwidth=0];
+}

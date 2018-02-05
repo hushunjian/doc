@@ -1,0 +1,71 @@
+{
+	"id": "256fa58a-2adc-0c91-1d9d-225bde76dd98",
+	"name": "登录",
+	"description": "",
+	"order": [
+		"5ab57db8-c07d-3093-c425-1352fb5f959c"
+	],
+	"folders": [],
+	"timestamp": 1504504855406,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "5ab57db8-c07d-3093-c425-1352fb5f959c",
+			"headers": "",
+			"url": "https://{{host}}/api/user/login",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "userName",
+					"value": "{{userName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "encrypt",
+					"value": "{{encrypt}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "jPushToken",
+					"value": "140fe1da9ea7a8446d2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 2001;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504599468258,
+			"name": "api.user.login",
+			"description": "登录",
+			"collectionId": "256fa58a-2adc-0c91-1d9d-225bde76dd98",
+			"responses": []
+		}
+	]
+}

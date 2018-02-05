@@ -1,0 +1,94 @@
+{
+	"id": "520c444d-5b0d-bef6-22be-5fab3af52cc4",
+	"name": "王国详情页（android分页）",
+	"description": "",
+	"order": [
+		"9252b447-b4b6-ab12-d9bd-7a6945ee3077"
+	],
+	"folders": [],
+	"timestamp": 1508914800681,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "9252b447-b4b6-ab12-d9bd-7a6945ee3077",
+			"headers": "",
+			"url": "https://{{host}}/api/live/detailPage",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "57641",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pageNo",
+					"value": "9",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "20",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "direction",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Response time is less than 500ms\"] = responseTime < 500;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510108131913,
+			"name": "api.live.detailPage",
+			"description": "",
+			"collectionId": "520c444d-5b0d-bef6-22be-5fab3af52cc4",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	"id": "c629c282-987b-0eb8-8ee5-9d24ec15b015",
+	"name": "王国详情分页版本",
+	"description": "",
+	"order": [
+		"8bb797ee-41d8-76f4-1c86-7822f50e8530"
+	],
+	"folders": [],
+	"timestamp": 1504669600207,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "8bb797ee-41d8-76f4-1c86-7822f50e8530",
+			"headers": "",
+			"url": "https://{{host}}/api/live/detailPage",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7839",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pageNo",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "20",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "direction",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20083;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504669799730,
+			"name": "api.live.detailPage",
+			"description": "",
+			"collectionId": "c629c282-987b-0eb8-8ee5-9d24ec15b015",
+			"responses": []
+		}
+	]
+}

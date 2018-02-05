@@ -1,0 +1,62 @@
+{
+	"info": {
+		"name": "rest.live.detail",
+		"_postman_id": "ce703337-6f2a-c0e5-e707-9c453eb3770e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{host}}:{{port}}/live/detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uid",
+							"value": "305",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "32b75631761f40448c7a6d8ccabc0420",
+							"type": "text"
+						},
+						{
+							"key": "version",
+							"value": "3.2.0",
+							"type": "text"
+						},
+						{
+							"key": "topicId",
+							"value": "3452",
+							"type": "text"
+						},
+						{
+							"key": "channel",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/live/detail",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"live",
+						"detail"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

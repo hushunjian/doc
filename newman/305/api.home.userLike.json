@@ -1,0 +1,89 @@
+{
+	"id": "7d36ceab-5e50-50e5-6d92-c4a8c0f47cc2",
+	"name": "王国和标签喜欢不喜欢",
+	"description": "",
+	"order": [
+		"6414aa2f-f12b-f0f0-b969-ac18d3cc0601"
+	],
+	"folders": [],
+	"timestamp": 1507597785446,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "6414aa2f-f12b-f0f0-b969-ac18d3cc0601",
+			"headers": "",
+			"url": "https://{{host}}/api/home/userLike",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7d36ceab-5e50-50e5-6d92-c4a8c0f47cc2",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isLike",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "needNew",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.home.userLike",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507685676477,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

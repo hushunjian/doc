@@ -1,0 +1,64 @@
+{
+	"id": "31e33474-97de-0e09-7564-22060bcbdfe4",
+	"name": "我的等级-去别人王国留言",
+	"description": "",
+	"order": [
+		"f7ccd699-3acf-9d29-15da-aabaf441866c"
+	],
+	"folders": [],
+	"timestamp": 1504765517388,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "f7ccd699-3acf-9d29-15da-aabaf441866c",
+			"headers": "",
+			"url": "https://{{host}}/api/live/getLiveByCid",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "64189",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510110499291,
+			"name": "api.live.getLiveByCid.quliuyan",
+			"description": "",
+			"collectionId": "31e33474-97de-0e09-7564-22060bcbdfe4",
+			"responses": []
+		}
+	]
+}

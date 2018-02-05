@@ -1,0 +1,70 @@
+{
+	"id": "68e43bf6-5a84-aec4-527f-5708b5865c3b",
+	"name": "通讯录我的关注列表",
+	"description": "",
+	"order": [
+		"f8698b84-7e02-cf21-07c0-58c010b42a52"
+	],
+	"folders": [],
+	"timestamp": 1504686752666,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "f8698b84-7e02-cf21-07c0-58c010b42a52",
+			"headers": "",
+			"url": "https://{{host}}/api/user/myFollowsQuery",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510121877375,
+			"name": "api.user.myFollowsQuery",
+			"description": "",
+			"collectionId": "68e43bf6-5a84-aec4-527f-5708b5865c3b",
+			"responses": []
+		}
+	]
+}

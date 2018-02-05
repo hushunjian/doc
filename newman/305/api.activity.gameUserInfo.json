@@ -1,0 +1,71 @@
+{
+	"id": "79e9ff85-7350-e1bb-4c4e-0508b5c63fd4",
+	"name": "游戏活动信息查询接口",
+	"description": "",
+	"order": [
+		"d19c1d37-a87a-4040-fd02-74d9869f658a"
+	],
+	"folders": [],
+	"timestamp": 1507711571751,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "d19c1d37-a87a-4040-fd02-74d9869f658a",
+			"headers": "",
+			"url": "https://{{host}}/api/activity/gameUserInfo",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "79e9ff85-7350-e1bb-4c4e-0508b5c63fd4",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gameUid",
+					"value": "12360",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.activity.gameUserInfo",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507711595440,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

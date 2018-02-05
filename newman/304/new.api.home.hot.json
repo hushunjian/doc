@@ -1,0 +1,64 @@
+{
+	"id": "b7451376-2743-e6a2-bdec-0a6e746c6aa4",
+	"name": "new.api.home.hot",
+	"description": "",
+	"order": [
+		"5bc98dd9-bc13-4a13-7af7-4e6524b9ba9f"
+	],
+	"folders": [],
+	"timestamp": 1505789333680,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "5bc98dd9-bc13-4a13-7af7-4e6524b9ba9f",
+			"headers": "",
+			"url": "https://{{host}}/api/home/hot",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 300ms\"] = responseTime < 300;\n\ntests[\"Body contains kName\"] = responseBody.has(\"kName\");\n\ntests[\"Body contains kcid\"] = responseBody.has(\"kcid\");\n\ntests[\"Body contains kIcon\"] = responseBody.has(\"kcIcon\");\n",
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1505788209387,
+			"name": "new.api.home.hot",
+			"description": "",
+			"collectionId": "b7451376-2743-e6a2-bdec-0a6e746c6aa4",
+			"responses": []
+		}
+	]
+}

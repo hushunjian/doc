@@ -1,0 +1,17 @@
+if [ ! z`whoami` = "zm2m" ]; then echo "you are not m2m."; exit; fi
+
+ansible zookeeper -m shell -a "sh /data/zookeeper/zookeeper.sh start"
+ansible zookeeper -m shell -a "sh /data/kafka/kafka.sh start"
+ansible zookeeper -m shell -a "sh /data/redis/redis.sh start"
+ansible apps      -m shell -a "sh /data/app.sh start"
+ansible iosms      -m shell -a "sh /data/app.sh start_iosms"
+ansible jetty     -m shell -a "sh /data/jetty/jetty.sh start"
+ansible jetty     -m shell -a "sh /data/tomcat/tomcat.sh start"
+
+ansible jetty     -m shell -a "sh /data/jetty/jetty.sh stop"
+ansible jetty     -m shell -a "sh /data/tomcat/tomcat.sh stop"
+ansible apps      -m shell -a "sh /data/app.sh stop"
+ansible iosms      -m shell -a "sh /data/app.sh stop_iosms"
+ansible zookeeper -m shell -a "sh /data/kafka/kafka.sh stop"
+ansible zookeeper -m shell -a "sh /data/redis/redis.sh stop"
+ansible zookeeper -m shell -a "sh /data/zookeeper/zookeeper.sh stop"

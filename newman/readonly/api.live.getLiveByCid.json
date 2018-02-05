@@ -1,0 +1,69 @@
+{
+	"id": "44215dec-8788-1329-a0a4-637d9d77b391",
+	"name": "进入王国详情页",
+	"description": "",
+	"order": [
+		"0bcf297a-57bb-beb5-6f5b-ca61fde36d24"
+	],
+	"folders": [],
+	"timestamp": 1504603686038,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0bcf297a-57bb-beb5-6f5b-ca61fde36d24",
+			"headers": "",
+			"url": "https://{{host}}/api/live/getLiveByCid",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "57641",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510107234625,
+			"name": "api.live.getLiveByCid",
+			"description": "",
+			"collectionId": "44215dec-8788-1329-a0a4-637d9d77b391",
+			"responses": []
+		}
+	]
+}

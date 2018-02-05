@@ -1,0 +1,70 @@
+{
+	"id": "3a96c7a6-b1a2-cbe0-6a58-ff3bfa76ca23",
+	"name": "推荐",
+	"description": "",
+	"order": [
+		"7f3b5b85-1aa6-9abf-de3b-394506cd0af9"
+	],
+	"folders": [],
+	"timestamp": 1504508321369,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "7f3b5b85-1aa6-9abf-de3b-394506cd0af9",
+			"headers": "",
+			"url": "https://{{host}}/api/search/recList",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510112561970,
+			"name": "api.search.recList",
+			"description": "",
+			"collectionId": "3a96c7a6-b1a2-cbe0-6a58-ff3bfa76ca23",
+			"responses": []
+		}
+	]
+}

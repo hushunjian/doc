@@ -1,0 +1,69 @@
+{
+	"id": "eb262763-55d8-8b81-d5fe-dc91a519c440",
+	"name": "new.api.home.listingKingdomGroup",
+	"description": "",
+	"order": [
+		"801b5d86-ad23-337e-57b2-64fe4a2cb16e"
+	],
+	"folders": [],
+	"timestamp": 1505789369224,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "801b5d86-ad23-337e-57b2-64fe4a2cb16e",
+			"headers": "",
+			"url": "https://{{host}}/api/home/listingKingdomGroup",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 300ms\"] = responseTime < 300;\n\ntests[\"Body matches coverImage\"] = responseBody.has(\"coverImage\");",
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1505788430292,
+			"name": "new.api.home.listingKingdomGroup",
+			"description": "",
+			"collectionId": "eb262763-55d8-8b81-d5fe-dc91a519c440",
+			"responses": []
+		}
+	]
+}

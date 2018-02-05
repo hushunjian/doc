@@ -1,0 +1,76 @@
+{
+	"id": "f1980640-cedc-485f-e1fb-863a61336cc1",
+	"name": "new.api.live.kingdomByCategory",
+	"description": "",
+	"order": [
+		"3bb0e028-00f3-8489-cfdb-4ae86a1b60dd"
+	],
+	"folders": [],
+	"timestamp": 1505789433172,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "3bb0e028-00f3-8489-cfdb-4ae86a1b60dd",
+			"headers": "",
+			"url": "https://{{host}}/api/live/kingdomByCategory",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "kcid",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;\n\ntests[\"Body matches kcName\"] = responseBody.has(\"kcName\");\n\ntests[\"Body matches coverKingdom\"] = responseBody.has(\"coverKingdom\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510122925040,
+			"name": "new.api.live.kingdomByCategory",
+			"description": "",
+			"collectionId": "f1980640-cedc-485f-e1fb-863a61336cc1",
+			"responses": []
+		}
+	]
+}

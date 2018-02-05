@@ -1,0 +1,1442 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+    <style>
+    
+        @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+  color: #032f62;
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  color: #fafbfc;
+  background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+  color: #fafbfc;
+  background-color: #d73a49;
+}
+
+.markdown-body .pl-c2::before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  font-weight: bold;
+  color: #22863a;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: bold;
+  color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: #24292e;
+}
+
+.markdown-body .pl-mb {
+  font-weight: bold;
+  color: #24292e;
+}
+
+.markdown-body .pl-md {
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+  color: #e36209;
+  background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+  color: #f6f8fa;
+  background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+  font-weight: bold;
+  color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: #032f62;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+}
+
+.markdown-body strong {
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body .octicon {
+  vertical-align: text-bottom;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px !important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px !important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px !important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px !important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px !important;
+}
+
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: 0.875em;
+}
+
+.markdown-body h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: 0.25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+.markdown-body{min-width:200px;max-width:100%;margin:0 auto;padding:30px}
+    
+    </style>
+</head>
+
+<body class="markdown-body">
+    <table>
+<thead>
+<tr>
+<th style="text-align:left">Package</th>
+<th style="text-align:left">Link</th>
+<th style="text-align:left">Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.addAdvertisement.html">api.advertisement.addAdvertisement</a></td>
+<td style="text-align:left">添加广告</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.addAdvertisementPosition.html">api.advertisement.addAdvertisementPosition</a></td>
+<td style="text-align:left">添加广告位</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.addLinkTag.html">api.advertisement.addLinkTag</a></td>
+<td style="text-align:left">添加关联标签</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.deleteAdvertisement.html">api.advertisement.deleteAdvertisement</a></td>
+<td style="text-align:left">删除广告</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.deleteAdvertisementPosition.html">api.advertisement.deleteAdvertisementPosition</a></td>
+<td style="text-align:left">删除广告位</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.getAdvertisementsByPositionId.html">api.advertisement.getAdvertisementsByPositionId</a></td>
+<td style="text-align:left">获取广告信息列表(按广告位查找)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.getAllAdvertisementPositions.html">api.advertisement.getAllAdvertisementPositions</a></td>
+<td style="text-align:left">获取所有的广告位</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.getAllAdvertisements.html">api.advertisement.getAllAdvertisements</a></td>
+<td style="text-align:left">获取所有的广告</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.getAllLinkTags.html">api.advertisement.getAllLinkTags</a></td>
+<td style="text-align:left">获取关联标签列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.unlinkLinkTag.html">api.advertisement.unlinkLinkTag</a></td>
+<td style="text-align:left">取消关联标签</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.updateAdvertisement.html">api.advertisement.updateAdvertisement</a></td>
+<td style="text-align:left">更新广告</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.advertisement.updateAdvertisementPosition.html">api.advertisement.updateAdvertisementPosition</a></td>
+<td style="text-align:left">更新广告位</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appconfig.addLightBox.html">api.appconfig.addLightBox</a></td>
+<td style="text-align:left">添加APP灯箱</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appconfig.deleteLightBox.html">api.appconfig.deleteLightBox</a></td>
+<td style="text-align:left">删除灯箱</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appconfig.getAppBasicConfig.html">api.appconfig.getAppBasicConfig</a></td>
+<td style="text-align:left">APP基础配置列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appconfig.getLightBoxs.html">api.appconfig.getLightBoxs</a></td>
+<td style="text-align:left">获取APP灯箱页列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appconfig.getLightBoxsByTime.html">api.appconfig.getLightBoxsByTime</a></td>
+<td style="text-align:left">查询APP灯箱页列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appconfig.refreshCache.html">api.appconfig.refreshCache</a></td>
+<td style="text-align:left">APP基础配置:全量刷新缓存</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appconfig.updateAppBasicConfig.html">api.appconfig.updateAppBasicConfig</a></td>
+<td style="text-align:left">更新APP基础配置</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appconfig.updateLightBox.html">api.appconfig.updateLightBox</a></td>
+<td style="text-align:left">更新APP灯箱</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.addRobot.html">api.appuser.addRobot</a></td>
+<td style="text-align:left">添加马甲号</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.deleteUserFragmentContent.html">api.appuser.deleteUserFragmentContent</a></td>
+<td style="text-align:left">删除app用户内容(王国发言/评论)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.deleteUserKingdomContent.html">api.appuser.deleteUserKingdomContent</a></td>
+<td style="text-align:left">删除app用户内容(王国)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.getAllAppUsers.html">api.appuser.getAllAppUsers</a></td>
+<td style="text-align:left">获取APP用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.getAppUserSearch.html">api.appuser.getAppUserSearch</a></td>
+<td style="text-align:left">查询APP用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.getUserFragmentContent.html">api.appuser.getUserFragmentContent</a></td>
+<td style="text-align:left">获取APP用户内容(王国发言/评论列表)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.getUserKingdomContent.html">api.appuser.getUserKingdomContent</a></td>
+<td style="text-align:left">获取APP用户内容(王国列表)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.setUserInviteStatus.html">api.appuser.setUserInviteStatus</a></td>
+<td style="text-align:left">设置用户邀请状态(是 或否)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.setUserSilentStatus.html">api.appuser.setUserSilentStatus</a></td>
+<td style="text-align:left">设置用户禁言状态(禁言 或 不禁言)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.setUserStatus.html">api.appuser.setUserStatus</a></td>
+<td style="text-align:left">设置用户状态(正常 或 封号)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.setUserV.html">api.appuser.setUserV</a></td>
+<td style="text-align:left">设置用户大V状态(上大V 或 取消大V)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.updateUserLevel.html">api.appuser.updateUserLevel</a></td>
+<td style="text-align:left">修改用户等级</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.behaviour.getAppAllPages.html">api.behaviour.getAppAllPages</a></td>
+<td style="text-align:left">获取app所有页面</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.behaviour.getUserBehaviors.html">api.behaviour.getUserBehaviors</a></td>
+<td style="text-align:left">日活统计(用户)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.behaviour.getUserBehaviorsSearch.html">api.behaviour.getUserBehaviorsSearch</a></td>
+<td style="text-align:left">查询日活统计(用户)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.behaviour.getUserBehaviorsTotal.html">api.behaviour.getUserBehaviorsTotal</a></td>
+<td style="text-align:left">日活-访问总时长和总次数统计</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.behaviour.getUserBehaviorsTotalSearch.html">api.behaviour.getUserBehaviorsTotalSearch</a></td>
+<td style="text-align:left">查询日活-访问总时长和总次数统计</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.behaviour.registeredUser.html">api.behaviour.registeredUser</a></td>
+<td style="text-align:left">新注册用户</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.gift.addGift.html">api.gift.addGift</a></td>
+<td style="text-align:left">添加礼物</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.appuser.getUsersRegisterChannel.html">api.appuser.getUsersRegisterChannel</a></td>
+<td style="text-align:left">获取app用户注册渠道</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.behaviour.registeredUserSearch.html">api.behaviour.registeredUserSearch</a></td>
+<td style="text-align:left">查询新注册用户</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.industrial.sortEntry.html">api.industrial.sortEntry</a></td>
+<td style="text-align:left">行业列表排序</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.emotion.addEmotion.html">api.emotion.addEmotion</a></td>
+<td style="text-align:left">添加表情</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.emotion.addEmotionPack.html">api.emotion.addEmotionPack</a></td>
+<td style="text-align:left">添加表情包</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.emotion.deleteEmotion.html">api.emotion.deleteEmotion</a></td>
+<td style="text-align:left">删除表情</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.emotion.deleteEmotionPack.html">api.emotion.deleteEmotionPack</a></td>
+<td style="text-align:left">删除表情包</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.emotion.getAllEmotionPacks.html">api.emotion.getAllEmotionPacks</a></td>
+<td style="text-align:left">获取表情包列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.emotion.getEmotions.html">api.emotion.getEmotions</a></td>
+<td style="text-align:left">获取表情</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.emotion.updateEmotion.html">api.emotion.updateEmotion</a></td>
+<td style="text-align:left">更新表情</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.emotion.updateEmotionPack.html">api.emotion.updateEmotionPack</a></td>
+<td style="text-align:left">更新表情包</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.feature.addFeature.html">api.feature.addFeature</a></td>
+<td style="text-align:left">添加功能</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.feature.deleteFeature.html">api.feature.deleteFeature</a></td>
+<td style="text-align:left">删除功能</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.feature.getAllFeatures.html">api.feature.getAllFeatures</a></td>
+<td style="text-align:left">获取所有功能</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.feature.getFeatureById.html">api.feature.getFeatureById</a></td>
+<td style="text-align:left">获取用户功能</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.feature.updateFeature.html">api.feature.updateFeature</a></td>
+<td style="text-align:left">更新功能</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.file.uploadImage.html">api.file.uploadImage</a></td>
+<td style="text-align:left">上传文件</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.gift.deleteGift.html">api.gift.deleteGift</a></td>
+<td style="text-align:left">删除礼物</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.gift.getAllgifts.html">api.gift.getAllgifts</a></td>
+<td style="text-align:left">获取礼物列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.gift.updateGift.html">api.gift.updateGift</a></td>
+<td style="text-align:left">更新礼物</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getAllLotteries.html">api.kingdom.getAllLotteries</a></td>
+<td style="text-align:left">获取王国抽奖列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getAllkingdoms.html">api.kingdom.getAllkingdoms</a></td>
+<td style="text-align:left">获取所有王国列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getKingdomRestTime.html">api.kingdom.getKingdomRestTime</a></td>
+<td style="text-align:left">获取上市王国休市时间</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getKingdomUserSearch.html">api.kingdom.getKingdomUserSearch</a></td>
+<td style="text-align:left">查询王国发言用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getKingdomUsers.html">api.kingdom.getKingdomUsers</a></td>
+<td style="text-align:left">获取王国发言用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getKingdomValueSearch.html">api.kingdom.getKingdomValueSearch</a></td>
+<td style="text-align:left">查询王国价值属性列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getKingdomValues.html">api.kingdom.getKingdomValues</a></td>
+<td style="text-align:left">获取王国价值属性列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getListedKingdomSearch.html">api.kingdom.getListedKingdomSearch</a></td>
+<td style="text-align:left">查询上市王国列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getListedKingdoms.html">api.kingdom.getListedKingdoms</a></td>
+<td style="text-align:left">获取所有上市王国列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getLotterySearch.html">api.kingdom.getLotterySearch</a></td>
+<td style="text-align:left">查询王国抽奖列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getLotteryUserSearch.html">api.kingdom.getLotteryUserSearch</a></td>
+<td style="text-align:left">查询王国抽奖参与用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getLotteryUsers.html">api.kingdom.getLotteryUsers</a></td>
+<td style="text-align:left">获取王国抽奖参与用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getPendingListedKingdomSearch.html">api.kingdom.getPendingListedKingdomSearch</a></td>
+<td style="text-align:left">查询待成交上市王国列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getPendingListedKingdoms.html">api.kingdom.getPendingListedKingdoms</a></td>
+<td style="text-align:left">获取所有待成交上市王国列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.getkingdomSearch.html">api.kingdom.getkingdomSearch</a></td>
+<td style="text-align:left">查询王国列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.kingdomTransaction.html">api.kingdom.kingdomTransaction</a></td>
+<td style="text-align:left">设置上市王国挂牌交易</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.refreshCache.html">api.kingdom.refreshCache</a></td>
+<td style="text-align:left">刷新王国缓存</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.setKingdomRestTime.html">api.kingdom.setKingdomRestTime</a></td>
+<td style="text-align:left">设置上市王国休市时间</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.setListedKingdomStatus.html">api.kingdom.setListedKingdomStatus</a></td>
+<td style="text-align:left">设置上市王国状态(解冻，冻结,待成交)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.setLotteryAppoint.html">api.kingdom.setLotteryAppoint</a></td>
+<td style="text-align:left">指定王国抽奖参与用户</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.updateKing.html">api.kingdom.updateKing</a></td>
+<td style="text-align:left">更换王国国王</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.addEntry.html">api.listrank.addEntry</a></td>
+<td style="text-align:left">添加王国(榜单/用户)到王国榜单(榜单集合/用户榜单)列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.addListRank.html">api.listrank.addListRank</a></td>
+<td style="text-align:left">添加新榜单</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.addOnlineListRank.html">api.listrank.addOnlineListRank</a></td>
+<td style="text-align:left">添加上线榜单</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.deleteEntry.html">api.listrank.deleteEntry</a></td>
+<td style="text-align:left">删除操作(从榜单列表中删除王国或榜单,用户信息)</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.deleteListRank.html">api.listrank.deleteListRank</a></td>
+<td style="text-align:left">删除榜单</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.deleteOnlineListRank.html">api.listrank.deleteOnlineListRank</a></td>
+<td style="text-align:left">删除上线榜单</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.getAllListRankKingdoms.html">api.listrank.getAllListRankKingdoms</a></td>
+<td style="text-align:left">获取王国榜单列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.getAllListRankModes.html">api.listrank.getAllListRankModes</a></td>
+<td style="text-align:left">获取榜单模式</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.getAllListRankSets.html">api.listrank.getAllListRankSets</a></td>
+<td style="text-align:left">获取榜单集合列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.getAllListRankUsers.html">api.listrank.getAllListRankUsers</a></td>
+<td style="text-align:left">获取用户榜单列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.getAllListRanks.html">api.listrank.getAllListRanks</a></td>
+<td style="text-align:left">获取榜单列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.getAllOnlineListRanks.html">api.listrank.getAllOnlineListRanks</a></td>
+<td style="text-align:left">获取上线榜单列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.getAppUserSearch.html">api.listrank.getAppUserSearch</a></td>
+<td style="text-align:left">查询(榜单)用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.getAppUsers.html">api.listrank.getAppUsers</a></td>
+<td style="text-align:left">获取(榜单)用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.getListRankById.html">api.listrank.getListRankById</a></td>
+<td style="text-align:left">获取榜单详情</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.setOnlineListRank.html">api.listrank.setOnlineListRank</a></td>
+<td style="text-align:left">已选榜单上下架处理</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.sortEntry.html">api.listrank.sortEntry</a></td>
+<td style="text-align:left">榜单列表(王国/用户/集合)排序</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.sortOnlineListRank.html">api.listrank.sortOnlineListRank</a></td>
+<td style="text-align:left">上线榜单列表(王国/用户)排序</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.listrank.updateListRank.html">api.listrank.updateListRank</a></td>
+<td style="text-align:left">更新榜单</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.role.addRole.html">api.role.addRole</a></td>
+<td style="text-align:left">添加角色</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.role.deleteRole.html">api.role.deleteRole</a></td>
+<td style="text-align:left">删除角色</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.role.getAllRoles.html">api.role.getAllRoles</a></td>
+<td style="text-align:left">获取所有角色</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.role.getRoleFeatures.html">api.role.getRoleFeatures</a></td>
+<td style="text-align:left">获取角色的功能</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.role.updateRole.html">api.role.updateRole</a></td>
+<td style="text-align:left">更新角色</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.addTag.html">api.tag.addTag</a></td>
+<td style="text-align:left">添加标签</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.addTagTopic.html">api.tag.addTagTopic</a></td>
+<td style="text-align:left">添加王国到标签</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.deleteTag.html">api.tag.deleteTag</a></td>
+<td style="text-align:left">删除标签</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.getAllParentTags.html">api.tag.getAllParentTags</a></td>
+<td style="text-align:left">获取父标签列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.getAllTagKingdom.html">api.tag.getAllTagKingdom</a></td>
+<td style="text-align:left">获取标签王国列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.getAllTags.html">api.tag.getAllTags</a></td>
+<td style="text-align:left">获取标签列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.getAllUserHobbies.html">api.tag.getAllUserHobbies</a></td>
+<td style="text-align:left">获取用户喜好列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.getTagSearch.html">api.tag.getTagSearch</a></td>
+<td style="text-align:left">查询标签列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.removeTagTopic.html">api.tag.removeTagTopic</a></td>
+<td style="text-align:left">从标签中移除王国</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.tag.updateTag.html">api.tag.updateTag</a></td>
+<td style="text-align:left">更新标签</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.deleteUser.html">api.user.deleteUser</a></td>
+<td style="text-align:left">删除用户</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.getAllUsers.html">api.user.getAllUsers</a></td>
+<td style="text-align:left">获取所有用户</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.getMyFeatures.html">api.user.getMyFeatures</a></td>
+<td style="text-align:left">获取登录用户功能</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.getMyRoles.html">api.user.getMyRoles</a></td>
+<td style="text-align:left">获取登录用户角色</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.getUserById.html">api.user.getUserById</a></td>
+<td style="text-align:left">获取用户信息</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.getUserFeatures.html">api.user.getUserFeatures</a></td>
+<td style="text-align:left">获取用户功能</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.getUserRoles.html">api.user.getUserRoles</a></td>
+<td style="text-align:left">获取指定用户角色</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.login.html">api.user.login</a></td>
+<td style="text-align:left">登录接口</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.logout.html">api.user.logout</a></td>
+<td style="text-align:left">登出接口</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.updatePassword.html">api.user.updatePassword</a></td>
+<td style="text-align:left">更新用户密码</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.updateUser.html">api.user.updateUser</a></td>
+<td style="text-align:left">更新用户</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.updateUserFeatures.html">api.user.updateUserFeatures</a></td>
+<td style="text-align:left">更新用户功能</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.updateUserRoles.html">api.user.updateUserRoles</a></td>
+<td style="text-align:left">更新用户角色</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.addUser.html">api.user.addUser</a></td>
+<td style="text-align:left">添加用户</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.industrial.updateIndustrial.html">api.industrial.updateIndustrial</a></td>
+<td style="text-align:left">更新行业信息</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.industrial.addIndustrial.html">api.industrial.addIndustrial</a></td>
+<td style="text-align:left">添加行业信息</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.industrial.getIndustrialManage.html">api.industrial.getIndustrialManage</a></td>
+<td style="text-align:left">获取行业列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.industrial.getIndustrialManageSearch.html">api.industrial.getIndustrialManageSearch</a></td>
+<td style="text-align:left">查询APP用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.user.resetPassword.html">api.user.resetPassword</a></td>
+<td style="text-align:left">更新用户密码</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.addAnchor.html">api.anchor.addAnchor</a></td>
+<td style="text-align:left">更新主播</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.deleteAnchor.html">api.anchor.deleteAnchor</a></td>
+<td style="text-align:left">删除主播</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.getAnchors.html">api.anchor.getAnchors</a></td>
+<td style="text-align:left">获取主播列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.updateAnchor.html">api.anchor.updateAnchor</a></td>
+<td style="text-align:left">更新主播</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.exportAnchorInviteDetail.html">api.anchor.exportAnchorInviteDetail</a></td>
+<td style="text-align:left">导出主播邀请明细Excel</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.getAnchorInvite.html">api.anchor.getAnchorInvite</a></td>
+<td style="text-align:left">获取主播邀请统计</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.getAnchorInviteDetail.html">api.anchor.getAnchorInviteDetail</a></td>
+<td style="text-align:left">获取主播邀请明细</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.kingdom.exportKingdomUsers.html">api.kingdom.exportKingdomUsers</a></td>
+<td style="text-align:left">导出王国发言用户列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.getAnchorInviteSearch.html">api.anchor.getAnchorInviteSearch</a></td>
+<td style="text-align:left">查询主播邀请统计</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.getAnchorSearch.html">api.anchor.getAnchorSearch</a></td>
+<td style="text-align:left">查询主播列表</td>
+</tr>
+<tr>
+<td style="text-align:left">cms</td>
+<td style="text-align:left"><a href="./cms/api.anchor.getAnchorInviteDetailSearch.html">api.anchor.getAnchorInviteDetailSearch</a></td>
+<td style="text-align:left">查询主播邀请明细</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+
+</html>

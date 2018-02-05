@@ -1,0 +1,83 @@
+{
+	"id": "b7ed4619-8675-5c28-ed06-1c226b86aac4",
+	"name": "王国设置编辑王国名字",
+	"description": "",
+	"order": [
+		"3659ebc9-9f8a-30bc-ce21-510fd20e0792"
+	],
+	"folders": [],
+	"timestamp": 1504680395544,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3659ebc9-9f8a-30bc-ce21-510fd20e0792",
+			"headers": "",
+			"url": "https://{{host}}/api/live/settingModify",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "b7ed4619-8675-5c28-ed06-1c226b86aac4",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7880",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "action",
+					"value": "8",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "params",
+					"value": "米币呀呀呀呀呀呀",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.live.settingModify.shezhiwanggming",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504680618090,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

@@ -1,0 +1,28 @@
+digraph G {
+    graph [
+        compound=true;
+        center=true;
+        charset="UTF-8";
+        rankdir=TB,
+    ];
+    node [
+        shape=record,
+        style="filled, solid",
+        fontname="Migu 1M",
+        color=grey;
+        fillcolor=orange;
+        fontsize=12
+    ];
+    edge [
+        color=black;
+    ];
+
+    nginx   [label="{Nginx|{{内网IP|外网IP|Name}|{120.27.160.203\l|10.47.51.228\l|lb\l}}}}"];
+    tomcat1 [label="{Tomcat#1|{{IP|Name}|{10.46.71.48\l|jetty-1\l}}}}"];
+    db      [label="{MySQL|{{IP|Name}|{10.50.217.80\l|test-db\l}}}}"];
+    redis   [label="{Redis|{{IP|Name}|{10.47.54.56\l|redis\l}}}}"];
+
+    nginx   -> tomcat1   [dir=none, penwidth=1];
+    tomcat1 -> db        [tailport = s, headport = n, dir=none, color=blue, penwidth=1];
+    tomcat1 -> redis     [tailport = s, headport = n, dir=none, color=red, penwidth=1];
+}

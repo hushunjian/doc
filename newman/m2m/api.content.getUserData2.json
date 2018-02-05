@@ -1,0 +1,70 @@
+{
+	"id": "6d546601-10c1-8c1c-1019-432a48f65287",
+	"name": "个人资料卡页面",
+	"description": "",
+	"order": [
+		"9eff03ad-0c04-6c1c-992b-38bdc1a0575a"
+	],
+	"folders": [],
+	"timestamp": 1504599172529,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "9eff03ad-0c04-6c1c-992b-38bdc1a0575a",
+			"headers": "",
+			"url": "https://{{host}}/api/content/getUserData2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "customerId",
+					"value": "{{customerId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504660601768,
+			"name": "api.content.getUserData2",
+			"description": "",
+			"collectionId": "6d546601-10c1-8c1c-1019-432a48f65287",
+			"responses": []
+		}
+	]
+}

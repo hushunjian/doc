@@ -1,0 +1,76 @@
+{
+	"id": "2db37368-7787-5b7e-86cb-ebc4db4d551f",
+	"name": "王国价值最高",
+	"description": "",
+	"order": [
+		"022b6908-5860-da8b-df66-5050e17aaadb"
+	],
+	"folders": [],
+	"timestamp": 1504603009788,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "022b6908-5860-da8b-df66-5050e17aaadb",
+			"headers": "",
+			"url": "https://{{host}}/api/home/showListDetail",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "-1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "listId",
+					"value": "22",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510109805313,
+			"name": "api.home.showListDetail",
+			"description": "",
+			"collectionId": "2db37368-7787-5b7e-86cb-ebc4db4d551f",
+			"responses": []
+		}
+	]
+}

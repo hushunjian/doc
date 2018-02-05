@@ -1,0 +1,65 @@
+{
+	"id": "74192f4a-2fc7-2ad7-bd1b-ede48708c29f",
+	"name": "游戏活动领取奖金池接口",
+	"description": "",
+	"order": [
+		"83bd32bb-3eab-70b9-079d-72b1657c3fa1"
+	],
+	"folders": [],
+	"timestamp": 1507711872147,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "83bd32bb-3eab-70b9-079d-72b1657c3fa1",
+			"headers": "",
+			"url": "https://{{host}}/api/activity/gameReceiveCoins",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "74192f4a-2fc7-2ad7-bd1b-ede48708c29f",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.activity.gameReceiveCoins",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507711888179,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

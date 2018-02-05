@@ -1,0 +1,70 @@
+{
+	"id": "61a1908b-b2df-354f-960e-2397ab7e64a7",
+	"name": "朋友圈",
+	"description": "",
+	"order": [
+		"5b410093-5d24-85e4-915f-79b889073708"
+	],
+	"folders": [],
+	"timestamp": 1504686883503,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "5b410093-5d24-85e4-915f-79b889073708",
+			"headers": "",
+			"url": "https://{{host}}/api/home/attention",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "94307",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510109082265,
+			"name": "api.home.attention",
+			"description": "",
+			"collectionId": "61a1908b-b2df-354f-960e-2397ab7e64a7",
+			"responses": []
+		}
+	]
+}

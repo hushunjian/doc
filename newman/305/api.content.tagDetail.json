@@ -1,0 +1,77 @@
+{
+	"id": "886f29ce-a3e8-6ae2-009d-e50152a55c4c",
+	"name": "新标签详情",
+	"description": "",
+	"order": [
+		"7c703600-56d3-002a-443a-22cf4d4d53bb"
+	],
+	"folders": [],
+	"timestamp": 1507686629822,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "7c703600-56d3-002a-443a-22cf4d4d53bb",
+			"headers": "",
+			"url": "https://{{host}}/api/content/tagDetail",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "886f29ce-a3e8-6ae2-009d-e50152a55c4c",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tagId",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.content.tagDetail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507687381357,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

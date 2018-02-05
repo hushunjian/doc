@@ -1,0 +1,111 @@
+{
+	"id": "3027f6fa-d624-968b-c213-ea68cd95020f",
+	"name": "主播发言",
+	"description": "",
+	"order": [
+		"4478a3ba-baab-e7a1-1901-129005762adb"
+	],
+	"folders": [],
+	"timestamp": 1504603924680,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "4478a3ba-baab-e7a1-1901-129005762adb",
+			"headers": "",
+			"url": "https://{{host}}/api/live/speak",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7839",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contentType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fragment",
+					"value": "小黄人",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isAt",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "atUid",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "source",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "extra",
+					"value": "{\"hAlign\":\"start\",\"textGravity\":3,\"type\":\"textNormal\"}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20030;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504604471448,
+			"name": "api.live.speak",
+			"description": "",
+			"collectionId": "3027f6fa-d624-968b-c213-ea68cd95020f",
+			"responses": []
+		}
+	]
+}

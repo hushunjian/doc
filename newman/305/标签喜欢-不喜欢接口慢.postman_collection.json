@@ -1,0 +1,95 @@
+{
+	"id": "63cb377a-e100-c251-e014-b6950c975e2c",
+	"name": "标签喜欢/不喜欢接口慢",
+	"description": "",
+	"order": [
+		"2a75fab7-fbe7-4650-aa3f-873d77beed2e"
+	],
+	"folders": [],
+	"timestamp": 1508729448119,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2a75fab7-fbe7-4650-aa3f-873d77beed2e",
+			"headers": "",
+			"url": "https://app2.me-to-me.com/api/home/userLike",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "63cb377a-e100-c251-e014-b6950c975e2c",
+			"data": [
+				{
+					"key": "uid",
+					"value": "67926",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "62958864a75e45baaf6e3d14642dc8cb",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "3.0.5.0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "baidu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tagIds",
+					"value": "1430,1432,1433,1176,1179,1180,1183,1184,1185",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "needNew",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isLike",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data",
+					"value": "1183",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://app2.me-to-me.com/api/home/userLike",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1508729460119,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Response time is less than 8000ms\"] = responseTime < 8000;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

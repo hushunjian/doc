@@ -1,0 +1,87 @@
+{
+	"id": "16447725-73af-fc97-4685-f32d61c1f6c6",
+	"name": "拥有的王国",
+	"description": "",
+	"order": [
+		"628a6755-8459-ada9-45ff-8152f09fc280"
+	],
+	"folders": [],
+	"timestamp": 1504601101466,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "628a6755-8459-ada9-45ff-8152f09fc280",
+			"headers": "",
+			"url": "https://{{host}}/api/content/myPublishByType",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "customerId",
+					"value": "{{customerId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "updateTime",
+					"value": "9223372036854775807",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510106250400,
+			"name": "api.content.myPublishByType.type3",
+			"description": "",
+			"collectionId": "16447725-73af-fc97-4685-f32d61c1f6c6",
+			"responses": []
+		}
+	]
+}

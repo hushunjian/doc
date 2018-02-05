@@ -1,0 +1,70 @@
+{
+	"id": "63758b11-8437-9c3b-dfcc-699e39781d9e",
+	"name": "进入王国详情页",
+	"description": "",
+	"order": [
+		"2a39dcd2-02d2-dd28-c8e1-e85a38a36576"
+	],
+	"folders": [],
+	"timestamp": 1504603686038,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "2a39dcd2-02d2-dd28-c8e1-e85a38a36576",
+			"headers": "",
+			"url": "https://test2.me-to-me.com/api/live/getLiveByCid",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "3.0.5.0515",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "7839",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508920276946,
+			"name": "api.live.getLiveByCid",
+			"description": "",
+			"collectionId": "63758b11-8437-9c3b-dfcc-699e39781d9e",
+			"responses": []
+		}
+	]
+}

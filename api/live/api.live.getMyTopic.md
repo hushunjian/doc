@@ -1,0 +1,166 @@
+## 接口描述
+王国互动新接口
+
+## API Path
+/api/live/getMyTopic
+
+## 请求报文
+|名称         |类型           |是否必须   |备注                                 |
+|-------------|:--------------|:---------:|:------------------------------------|
+|updateTime    |int    |是    |分页使用，首页传0    |
+
+## 返回报文
+	{
+		"attentionData":[
+			{
+				"uid":123,
+				"avatar":"头像",
+				"avatarFrame":"头像框",
+				"v_lv":0,
+				"level":1
+			}
+		],
+		"isUpdate":0,
+		"givenKingdoms":[
+			{
+				"givenKingdomId":123,
+				"summary":"abc",
+				"tags":"标签",
+				"topicId":123,
+				"title":"hehe",
+				"coverImage":"default.jpg",
+				"uid":123,
+				"avatar":"default.jpg",
+				"avatarFrame":"",
+				"nickName":"x",
+				"v_lv":1,
+				"contentType":0,
+				"level":1,
+				"kcName":"分享"
+			}
+		],
+		"showTopicElements":[
+			{
+				"cid":12,
+				"topicId":123,
+				"title":"hehe",
+				"coverImage":"default.jpg",
+				"uid":123,
+				"avatar":"default.jpg",
+				"avatarFrame":"",
+				"createTime":1234567890,
+				"lastContentType":0,
+				"lastFragment":"abc",
+				"lastFragmentImage":"ddd",
+				"nickName":"x",
+				"reviewCount":12,
+				"likeCount":12,
+				"favorite":1,
+				"favoriteCount":12,
+				"updateTime":1234567890,
+				"isFollowed":1,
+				"isFollowMe":2,
+				"lastUpdateTime":1234567890,
+				"topicCount":12,
+				"isUpdate":0,
+				"readCount":12,
+				"v_lv":1,
+				"contentType":0,
+				"acCount":0,
+				"lastStatus":1,
+				"lastExtra":"",
+				"isTop":0,
+				"lastType":0,
+				"lastAtUid":123,
+				"internalStatus":2,
+				"lastUid":12,
+				"lastNickName":"c",
+				"lastAvatar":"default.jpg",
+				"lastAvatarFrame":"",
+				"lastV_lv":0,
+				"price":1234,
+				"level":1,
+				"lastLevel":1,
+				"kcName":"分享"
+			}
+		]
+	}
+
+### 字段说明
+|名称|类型|备注|
+|:-|:-|:-|
+|attentionData|array|朋友圈简略信息数组|
+|isUpdate|int|王国互动是否有更新标识，0否，1是|
+|givenKingdoms|array|赠送王国节点数组|
+|showTopicElements|array|王国节点数组|
+
+### attentionData节点说明
+|名称|类型|备注|
+|:-|:-|:-|
+|uid|long|用户ID|
+|avatar|string|头像|
+|avatarFrame|string|头像框|
+|v_lv|int|用户是否大V，0否，1是|
+|level|int|用户等级|
+
+### givenKingdoms节点说明
+|名称|类型|备注|
+|:-|:-|:-|
+|givenKingdomId|long|赠送ID|
+|summary|string|王国简介|
+|tags|string|标签|
+|title|string|王国名|
+|coverImage|string|王国封面|
+|uid|long|用户ID|
+|avatar|string|头像|
+|avatarFrame|string|头像框|
+|nickName|string|昵称|
+|v_lv|int|是否大V，0否，1是|
+|contentType|int|王国等级|
+|level|int|用户等级|
+|kcName|string|王国分类名称|
+
+### showTopicElements节点说明
+|名称|类型|备注|
+|:-|:-|:-|
+|uid|long|国王用户ID|
+|avatar|string|头像|
+|avatarFrame|string|头像框|
+|v_lv|int|国王是否大V，0否，1是|
+|level|int|国王等级|
+|cid|long|王国内容ID|
+|topicId|long|王国ID|
+|title|string|王国标题|
+|coverImage|string|王国封面|
+|createTime|long|创建时间|
+|nickName|string|国王昵称|
+|reviewCount|int|评论数|
+|likeCount|int|点赞数|
+|favorite|int|是否加入过，0否，1是|
+|favoriteCount|int|成员数|
+|updateTime|long|更新时间|
+|isFollowed|int|是否关注过国王，0否，1是|
+|isFollowMe|int|是否被过国王关注过，0否，1是|
+|topicCount|int|更新数|
+|isUpdate|int|是否有更新（红点），0否，1是|
+|readCount|int|阅读数|
+|contentType|int|王国类型，0个人王国，1000聚合王国|
+|acCount|int|子王国数，contentType=1000时有效|
+|isTop|int|是否置顶|
+|internalStatus|int|当前用户对于本王国的身份，0圈外，1成员，2核心圈|
+|price|int|王国价值|
+|lastLevel|int|最后次发言用户等级|
+|lastContentType|int|最后次发言内容类型|
+|lastFragment|string|最后次发言内容|
+|lastFragmentImage|string|最后次发言图片|
+|lastUpdateTime|long|最后次发言时间|
+|lastStatus|int|最后次发言状态|
+|lastExtra|string|最后次发言扩展信息|
+|lastType|int|最后次发言类型|
+|lastAtUid|long|最后次发言at用户ID|
+|lastUid|long|最后次发言用户ID|
+|lastNickName|string|最后次发言用户昵称|
+|lastAvatar|string|最后发言头像|
+|lastAvatarFrame|string|最后次发言头像框|
+|lastV_lv|int|最后次发言用户是否大V，0否，1是|
+|kcName|string|王国分类名称|

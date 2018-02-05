@@ -1,0 +1,76 @@
+{
+	"id": "b7374d24-d280-6cfd-3b60-8adbeb7a4817",
+	"name": "通讯录",
+	"description": "",
+	"order": [
+		"3d80a6d6-44ea-3041-d1d1-2c7256fac7b9"
+	],
+	"folders": [],
+	"timestamp": 1504685766227,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3d80a6d6-44ea-3041-d1d1-2c7256fac7b9",
+			"headers": "",
+			"url": "https://{{host}}/api/user/contacts",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobiles",
+					"value": "17621958692,15902600070,13761808931,17721279968,18186857081,18352621390,18807408207,18521068546,18807408278,15971517075",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510112787552,
+			"name": "api.user.contacts",
+			"description": "",
+			"collectionId": "b7374d24-d280-6cfd-3b60-8adbeb7a4817",
+			"responses": []
+		}
+	]
+}

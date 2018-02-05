@@ -1,0 +1,71 @@
+{
+	"id": "2f5662e2-8968-1a86-e97b-d948619a74eb",
+	"name": "new.api.home.tagGroup",
+	"description": "",
+	"order": [
+		"fba8f2e0-96e9-ea85-2285-4a3d9927cc9e"
+	],
+	"folders": [],
+	"timestamp": 1505789402074,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "fba8f2e0-96e9-ea85-2285-4a3d9927cc9e",
+			"headers": "",
+			"url": "https://{{host}}/api/home/tagGroup",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "3.0.6.0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;\n\ntests[\"Body matches coverImage\t\"] = responseBody.has(\"coverImage\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510106674297,
+			"name": "api.home.tagGroup",
+			"description": "",
+			"collectionId": "2f5662e2-8968-1a86-e97b-d948619a74eb",
+			"responses": []
+		}
+	]
+}

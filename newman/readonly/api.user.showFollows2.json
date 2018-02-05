@@ -1,0 +1,76 @@
+{
+	"id": "ea800697-6f8f-d2ca-408a-a7895cf87a64",
+	"name": "我的页面-关注",
+	"description": "",
+	"order": [
+		"84543516-da94-b3ad-9709-d64198807710"
+	],
+	"folders": [],
+	"timestamp": 1504764908739,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "84543516-da94-b3ad-9709-d64198807710",
+			"headers": "",
+			"url": "https://{{host}}/api/user/showFollows2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "customerId",
+					"value": "67926",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20042;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510122166025,
+			"name": "api.user.showFollows2",
+			"description": "",
+			"collectionId": "ea800697-6f8f-d2ca-408a-a7895cf87a64",
+			"responses": []
+		}
+	]
+}

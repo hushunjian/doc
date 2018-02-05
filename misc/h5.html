@@ -1,0 +1,1573 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+    <style>
+    
+        @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+  color: #032f62;
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  color: #fafbfc;
+  background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+  color: #fafbfc;
+  background-color: #d73a49;
+}
+
+.markdown-body .pl-c2::before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  font-weight: bold;
+  color: #22863a;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: bold;
+  color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: #24292e;
+}
+
+.markdown-body .pl-mb {
+  font-weight: bold;
+  color: #24292e;
+}
+
+.markdown-body .pl-md {
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+  color: #e36209;
+  background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+  color: #f6f8fa;
+  background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+  font-weight: bold;
+  color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: #032f62;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+}
+
+.markdown-body strong {
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body .octicon {
+  vertical-align: text-bottom;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px !important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px !important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px !important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px !important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px !important;
+}
+
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: 0.875em;
+}
+
+.markdown-body h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: 0.25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+.markdown-body{min-width:200px;max-width:100%;margin:0 auto;padding:30px}
+    
+    </style>
+</head>
+
+<body class="markdown-body">
+    <h2 id="-">历史</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">作者</th>
+<th style="text-align:left">日期</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/09/08</td>
+<td style="text-align:left">完成广告页面交互协议。</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/10/24</td>
+<td style="text-align:left">添加抽奖页面退出交互协议。</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/12/05</td>
+<td style="text-align:left">&quot;添加王国创建界面交互协议；<br/> 添加王国跳转界面交互协议。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/12/08</td>
+<td style="text-align:left">&quot;优化王国跳转界面交互协议；<br/> 在活动页面协议中添加关闭协议。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/12/08</td>
+<td style="text-align:left">&quot;添加分享交互协议；<br/> 历史移到文档最后。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/12/12</td>
+<td style="text-align:left">添加打开个人信息详情。</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/12/12</td>
+<td style="text-align:left">为iOS在分享接口上增加cid字段。</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/12/14</td>
+<td style="text-align:left">添加关键字保存接口和读取接口。</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/12/15</td>
+<td style="text-align:left">&quot;添加通知协议和调用协议区分；<br/> 添加应用返回通知和创建王国结果通知。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2016/12/18</td>
+<td style="text-align:left">添加用户信息获取接口。</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2017/01/05</td>
+<td style="text-align:left">&quot;添加打开具体内容接口；<br/> 添加创建王国春节类型描述；<br/> 添加获取版本号接口。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2017/01/06</td>
+<td style="text-align:left">添加打开具体内容接口标题和封面图参数</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2017/05/24</td>
+<td style="text-align:left">添加友盟事件埋点方法</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2017/05/26</td>
+<td style="text-align:left">&quot;添加分享选项QQ显示方法；<br/> 添加举报选项现实方法&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2017/08/15</td>
+<td style="text-align:left">&quot;添加标题设置方法；<br/> 添加隐藏、显示编辑按钮方法；<br/> 添加启动抽奖编辑界面方法；<br/> 添加启动原生输入框方法；<br/> 添加启动菜单方法；<br/> 添加分享按钮触发通知；<br/> 添加编辑按钮触发通知；<br/> 添加菜单按钮触发通知；<br/> 添加输入触发通知&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">陈建文</td>
+<td style="text-align:left">2017/11/24</td>
+<td style="text-align:left">添加设置图片分享数据接口</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">工作域定义</h2>
+<h3 id="-metomeapi-javascript-javascript-">回调工作域定为meTomeApi。所谓回调工作域，是指由网页程序通过Javascript对原生应用方法进行调用的接口集合。原生应用接口的功能实现以及对Javascript的方法注入。</h3>
+<h3 id="-metomeh5api-javascript-">通知工作域定为meTomeH5Api。所谓通知工作域，是指由原生应用在特定时机调用的，由网页端实现的Javascript功能方法。</h3>
+<h2 id="-">回调方法定义</h2>
+<h3 id="-">显示、隐藏框架状态方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">showFrame(show)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">通过对参数show进行设置来控制原生框架的显示或隐藏。</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;参数show为数字类型</td>
+</tr>
+<tr>
+<td style="text-align:left">当show</td>
+<td style="text-align:left">不为0时，显示原生框架；</td>
+</tr>
+<tr>
+<td style="text-align:left">当show</td>
+<td style="text-align:left">为0时，隐藏原生框架。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">广告页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">页面跳转方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">startPage(page，action)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">根据参数page和action进行页面跳转。</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;参数page和action都为字符型<br/> 当page为”register”时，跳转至注册页面。此时action参数不起作用；<br/> 当show为”login”时，若action参数为空，则跳转至原生登录页面；<br/> 当show为”login”时，若action参数为”wechat”，则调用微信登录，若出现调用失败不跳转；<br/> 当show为”login”时，若action参数为”qq”，则调用QQ登录。若出现调用失败则不跳转；<br/> 其他情况，无反应。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">广告页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">关闭页面方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">exit()</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">关闭当前页面。</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">无参数。</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">活动页面包含如下协议</h2>
+<h3 id="-">创建王国方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">startKingdomCreateActivity(type, slogen,fuid)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">打开王国创建页面</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;参数type为数字类型，创建页面类型<br/> 0：基本类型（默认）;<br/> 1：为活动单人王国；<br/> 2：为活动配对王国；<br/> 3：为春节王国<br/> 参数slogen文本类型，显示在首次输入内容的上的默认口号，为空时显示默认文案。<br/> 参数fuid为数字类型(long)，在活动配对王国中使用(type等于2时)，为与国王配对人选的个人唯一索引。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">跳转王国方法</h3>
+<p>|方法名| startKingdomDetailActivity(topicId, fid)|<br>|作用| 打开王国详情页面|<br>|参数说明| &quot;参数topicId为数字类型（long），王国唯一索引。<br/> 参数fid是王国跳转位置的内容id。 小于0的数会使详情业使用默认显示方式，大于0的数会使详情页跳转至准确会接近位置。&quot;|<br>|适用范围| 全部页面|</p>
+<h3 id="-">分享方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">share(url, title, image,cid)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">打开分享菜单</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;参数url为分享的网页链接地址；<br/> 参数title是分享的标题，限制16字(QQ分享限制)，置空则显示活动标题；<br/> 参数image是分享图片的链接地址，不要用太大的图，否则会失败，置空则显示活动封面；<br/> 参数cid是内容<br/> id,此处用于确定举报对象（for iOS）。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="qq-">QQ分享显示控制方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">enableQQ(s)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">控制QQ分享项目显示与否</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">参数s,数字类型，0为显示QQ分享，其他隐藏QQ分享</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">举报显示控制方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">enableReport (s)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">控制举报项目显示与否（不设置则默认显示）</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">参数s,数字类型，0为显示，其他隐藏</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">打开个人信息详情方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">startPersonalCenter (uid)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">打开个人信息详情</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">参数uid是用户的唯一识别号</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">关键字保存方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">save(key, value)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">保存以key值为索引的关键字数据</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;key 索引</td>
+</tr>
+<tr>
+<td style="text-align:left">value</td>
+<td style="text-align:left">关键字数据&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">关键字读取方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">load(key)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">读取以key值为索引的关键字数据</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">key 索引</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">关键字数据</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">用户信息获取方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">getCurrentUser()</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">获取用户信息</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">无参数</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">&quot;以减号相分隔的用户信息，包括用户唯一号和用户访问令牌。<br/> 例如318-awer342rexxxxxxx <br/> 其中，“318”是用户唯一号，“awer342rexxxxxxx”则是访问令牌。<br/> 当用户不存在，或者令牌无效时，该方法返回空字符串。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">打开内容方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">startDetailActivity(type, contentType, cid, uid, url, title, cover)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">打开内容详情页</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;type为类型，具体如下：<br/> UGC（用户产生内容）<br/> 转发（保留未用）<br/> PGC（产品产生内容）<br/> 王国<br/> 活动<br/> 智能推荐<br/> 王国转发（保留未用）<br/> 活动转发（保留未用）<br/> PGC转发<br/> 智能推荐转发<br/> contentType为内容的类型，当类型为4（活动）时，0为普通活动，1为特殊活动。<br/> cid为内容的唯一索引。<br/> uid为内容所属用户唯一索引，当类型为0, 3, 5, 8, 9的时候，这个uid必须是正确并且有效的。<br/> url 是内容的地址，当类型为活动，智能推荐和智能推荐转发时使用<br/> title 标题<br/> cover 封面图&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">获取版本号方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">version()</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">获取当前版本信息</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">无参数</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">以数字索引的版本信息，当前为1</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">友盟事件埋点方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">umeng(event)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">获取当前版本信息</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">event为事件名称，字符类型</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">标题设置方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">setTitle(title)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">获取当前版本信息</td>
+</tr>
+<tr>
+<td style="text-align:left">参数</td>
+<td style="text-align:left">说明title 标题文字</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">隐藏编辑按钮方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">showEditButton(s)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">隐藏编辑按钮</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">s 数字类型 0 隐藏 1显示</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">启动抽奖编辑界面方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">startRaffleEdit( raffleId, title, content, pwNum, endTime, state)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">启动抽奖编辑界面</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;raffleId 抽奖索引<br/> title 抽奖标题<br/> content 抽奖内容文本<br/> pwNum (number of price winner)获奖人数<br/> endTime 抽奖结束时间<br/> state 抽奖状态<br/> 0 进行中；<br/> 1 倒计时结束；<br/> 2 抽奖结束&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">启动原生输入框方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">startInput(sid, hint)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">启动原生输入框</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;sid 输入框序列号（字符串）<br/> hint 默认提示文本（字符串）&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">启动菜单界面方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">startMenu ( title, sid, menu)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">启动菜单</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;title 标题<br/> sid 对象唯一索引（字符串）<br/> menu 菜单数据（JSON序列化的字符串）。它实际是一个数组，其内部数据如下<br/> 字段    类型    描述<br/> opid    字符    菜单选项的唯一索引<br/> text    字符    菜单选项上出现的文字<br/> color    字符    文字颜色，格式如下 #ffffffff, #ffffff, #fff<br/> 菜单数据最多支持6个，多于6个不做支持。&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">设置分享图片方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">setShareImageUrl (url)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">设置图片分享数据</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">url 分享图片的链接地址，支持data:image数据。</td>
+</tr>
+<tr>
+<td style="text-align:left">返回</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">通知方法定义</h2>
+<h3 id="-">应用返回</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">resume (code, msg)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">通知网页应用当前界面从其他界面返回，首次展现也会调用。</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;code 返回码</td>
+</tr>
+<tr>
+<td style="text-align:left">msg</td>
+<td style="text-align:left">返回消息&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">创建王国结果</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">createKingdomResult(resultCode)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">通知网页应用王国对象是否创建。从创建王国界面返回时调用。</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;resultCode创建结果。<br/> 0x2000 创建成功<br/> 0x2001 创建取消&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">分享按钮触发通知</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">onShareButtonClick()</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">通知网页应用分享按钮被用户触发，网页端需要按需调起分享菜单。</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">编辑按钮触发通知</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">onEditButtonClick()</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">通知网页应用分享按钮被用户触发，网页端需要按需调起编辑界面。</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">无</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">菜单按钮触发通知</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">onMenuClick(sid, opid)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">通知网页应用菜单按钮被用户触发，网页端需要按照预定操作进行相应反应。</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;sid 启动菜单时对象所用的唯一识别号(字符串)<br/> opid 启动菜单时预先定义行为识别号(字符串)&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-">输入触发通知</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">方法名</td>
+<td style="text-align:left">onInput(sid, text)</td>
+</tr>
+<tr>
+<td style="text-align:left">作用</td>
+<td style="text-align:left">通知网页应用原生输入框输入事件触发。</td>
+</tr>
+<tr>
+<td style="text-align:left">参数说明</td>
+<td style="text-align:left">&quot;sid 唯一识别号(字符串)<br/> text 输入文字&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">适用范围</td>
+<td style="text-align:left">全部页面</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+
+</html>

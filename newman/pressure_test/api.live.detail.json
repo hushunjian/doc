@@ -1,0 +1,101 @@
+{
+	"id": "f471ae51-62ac-afca-4b63-e3e9e665353a",
+	"name": "王国详情接口(IOS分页版本)",
+	"description": "",
+	"order": [
+		"c795a85a-2b6e-fa53-a901-fcd66f9d5f72"
+	],
+	"folders": [],
+	"timestamp": 1508911559798,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "c795a85a-2b6e-fa53-a901-fcd66f9d5f72",
+			"headers": "",
+			"url": "https://{{host}}/api/live/detail",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f471ae51-62ac-afca-4b63-e3e9e665353a",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7839",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "3.0.50",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "direction",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "20",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pageNo",
+					"value": "166",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "paltform",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.live.detail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1508914782904,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

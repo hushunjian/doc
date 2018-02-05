@@ -1,0 +1,71 @@
+{
+	"id": "d3967f1f-07a9-6b1c-f09b-d2b39ca4d39e",
+	"name": "安卓获取抽奖资格",
+	"description": "",
+	"order": [
+		"91a9955a-d805-b6ec-8813-a42dc4b49ad6"
+	],
+	"folders": [],
+	"timestamp": 1504767531312,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "91a9955a-d805-b6ec-8813-a42dc4b49ad6",
+			"headers": "",
+			"url": "https://{{host}}/api/activity/checkIsAward",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "d3967f1f-07a9-6b1c-f09b-d2b39ca4d39e",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "activityName",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.activity.checkIsAward",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504767550214,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20077;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

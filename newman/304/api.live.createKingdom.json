@@ -1,0 +1,108 @@
+{
+	"id": "d6786db5-25a2-5816-6b07-0bbd4214044f",
+	"name": "创建个人王国 copy",
+	"description": "",
+	"order": [
+		"0b37f9a1-efba-1b98-77f3-f41b1934ed5a"
+	],
+	"folders": [],
+	"timestamp": 1504684301032,
+	"owner": 0,
+	"public": false,
+	"folders_order": [],
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "0b37f9a1-efba-1b98-77f3-f41b1934ed5a",
+			"headers": "",
+			"url": "https://{{host}}/api/live/createKingdom",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "我是神仙哈哈哈哈生死是十四师",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "liveImage",
+					"value": "5b671754-b133-4c6c-9d18-6c6b914412dd-1504684748121",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contentType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fragment",
+					"value": "哮天犬，二郎神",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "source",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "kType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "kcid",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1505963233181,
+			"name": "api.live.createKingdom.geren",
+			"description": "",
+			"collectionId": "d6786db5-25a2-5816-6b07-0bbd4214044f",
+			"responses": []
+		}
+	]
+}

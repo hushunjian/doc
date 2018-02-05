@@ -1,0 +1,76 @@
+{
+	"id": "f0ac41f7-6ccc-7037-c2c4-e0fe6527d47f",
+	"name": "new.api.user.awardByInvitation",
+	"description": "",
+	"order": [
+		"66af0127-27c5-9829-786a-da794fc60ef5"
+	],
+	"folders": [],
+	"timestamp": 1505789448626,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "66af0127-27c5-9829-786a-da794fc60ef5",
+			"headers": "",
+			"url": "https://{{host}}/api/user/awardByInvitation",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fromUid",
+					"value": "12360",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "tests[\"Response time is less than 300ms\"] = responseTime < 300;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1505872623844,
+			"name": "new.api.user.awardByInvitation",
+			"description": "",
+			"collectionId": "f0ac41f7-6ccc-7037-c2c4-e0fe6527d47f",
+			"responses": []
+		}
+	]
+}

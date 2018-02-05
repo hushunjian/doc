@@ -1,0 +1,75 @@
+{
+	"id": "b1ee919b-0fc3-5e38-e205-863b908f32a4",
+	"name": "new.api.home.tagGroup",
+	"description": "",
+	"order": [
+		"4a7b3b04-5288-58d8-7b01-796943a1fc27"
+	],
+	"folders": [],
+	"timestamp": 1505789402074,
+	"owner": "2696738",
+	"public": false,
+	"folders_order": [],
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "4a7b3b04-5288-58d8-7b01-796943a1fc27",
+			"headers": "",
+			"headerData": [],
+			"url": "https://{{host}}/api/home/tagGroup",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\n\ntests[\"Response time is less than 300ms\"] = responseTime < 300;\n\ntests[\"Body matches coverImage\t\"] = responseBody.has(\"coverImage\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1505870917984,
+			"name": "new.api.home.tagGroup",
+			"description": "",
+			"collectionId": "b1ee919b-0fc3-5e38-e205-863b908f32a4",
+			"responses": []
+		}
+	]
+}

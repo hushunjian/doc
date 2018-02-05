@@ -1,0 +1,75 @@
+{
+	"id": "4981222c-555d-25c4-8fd1-c9a280788e37",
+	"name": "标签管理页查询",
+	"description": "",
+	"order": [
+		"a355fbe6-7068-b1c0-f913-d64f36ff3ab4"
+	],
+	"folders": [],
+	"timestamp": 1507686097644,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "a355fbe6-7068-b1c0-f913-d64f36ff3ab4",
+			"headers": "",
+			"url": "https://{{host}}/api/content/tagMgmtQuery",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507686421547,
+			"name": "api.content.tagMgmtQuery",
+			"description": "",
+			"collectionId": "4981222c-555d-25c4-8fd1-c9a280788e37",
+			"responses": []
+		}
+	]
+}

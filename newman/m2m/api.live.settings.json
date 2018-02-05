@@ -1,0 +1,71 @@
+{
+	"id": "f414d446-1bbc-35d7-1400-2c497c1264ec",
+	"name": "王国设置",
+	"description": "",
+	"order": [
+		"d043c5a1-7e1d-80a8-4df3-7371e7521c0a"
+	],
+	"folders": [],
+	"timestamp": 1504680182686,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "d043c5a1-7e1d-80a8-4df3-7371e7521c0a",
+			"headers": "",
+			"url": "https://{{host}}/api/live/settings",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f414d446-1bbc-35d7-1400-2c497c1264ec",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{verison}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7880",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.live.settings",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504680350038,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+	"id": "30cad285-5805-3add-f642-9929e160b15c",
+	"name": "通讯录手机联系人查看更多",
+	"description": "",
+	"order": [
+		"82407677-e63f-83e4-5ef7-9cdf6b270333"
+	],
+	"folders": [],
+	"timestamp": 1504686449298,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "82407677-e63f-83e4-5ef7-9cdf6b270333",
+			"headers": "",
+			"url": "https://{{host}}/api/user/mobileQuery",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "-1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobiles",
+					"value": "17621958692,15902600070,13761808931,17721279968,18186857081,18352621390,18807408207,18521068546,18807408278,15971517075,17301709020,13122559987,15797762820,17520699721,13764572163,13347396085,13467366402,13016998360,13012885819,18973642867,18600064499,18676916549,18255182393",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510121786917,
+			"name": "api.user.mobileQuery",
+			"description": "",
+			"collectionId": "30cad285-5805-3add-f642-9929e160b15c",
+			"responses": []
+		}
+	]
+}

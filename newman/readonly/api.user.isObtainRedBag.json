@@ -1,0 +1,64 @@
+{
+	"id": "674f657f-133b-c5ad-a774-0ab19dc8a46c",
+	"name": "是否领取红包",
+	"description": "",
+	"order": [
+		"7ad04176-316c-f81b-8abc-e5438d62528b"
+	],
+	"folders": [],
+	"timestamp": 1504763613372,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "7ad04176-316c-f81b-8abc-e5438d62528b",
+			"headers": "",
+			"url": "https://{{host}}/api/user/isObtainRedBag",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510120278758,
+			"name": "api.user.isObtainRedBag",
+			"description": "",
+			"collectionId": "674f657f-133b-c5ad-a774-0ab19dc8a46c",
+			"responses": []
+		}
+	]
+}

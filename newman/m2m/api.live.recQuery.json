@@ -1,0 +1,77 @@
+{
+	"id": "6eb9fc38-9e7f-52ff-4089-35980f473036",
+	"name": "智能推荐长按找相似",
+	"description": "",
+	"order": [
+		"3fd8fa70-113a-d0cb-5cad-d17c75aed30a"
+	],
+	"folders": [],
+	"timestamp": 1504769555673,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3fd8fa70-113a-d0cb-5cad-d17c75aed30a",
+			"headers": "",
+			"url": "https://{{host}}/api/live/recQuery",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6eb9fc38-9e7f-52ff-4089-35980f473036",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{verison}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "-1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "8116",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.live.recQuery",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504769815405,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"id": "c3e7c2b7-5179-2b65-b39d-8d47db5136c4",
+	"name": "获取七牛图片",
+	"description": "",
+	"order": [
+		"0d4d2bb9-a398-cd25-21ab-cce2b1e24b11"
+	],
+	"folders": [],
+	"timestamp": 1504685365282,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0d4d2bb9-a398-cd25-21ab-cce2b1e24b11",
+			"headers": "",
+			"url": "https://{{host}}/api/io/getQiniuAccessToken",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20022;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504685504647,
+			"name": "api.io.getQiniuAccessToken",
+			"description": "",
+			"collectionId": "c3e7c2b7-5179-2b65-b39d-8d47db5136c4",
+			"responses": []
+		}
+	]
+}

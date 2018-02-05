@@ -1,0 +1,65 @@
+{
+	"id": "1cee889a-6756-af41-0dc5-e9523c017dc9",
+	"name": "new.api.live.category",
+	"description": "",
+	"order": [
+		"2e4a7d33-9fba-244f-bfc4-d96d190bf4b8"
+	],
+	"folders": [],
+	"timestamp": 1505789416625,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "2e4a7d33-9fba-244f-bfc4-d96d190bf4b8",
+			"headers": "",
+			"url": "https://{{host}}/api/live/category",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;\n\ntests[\"Body matches kcImage\"] = responseBody.has(\"kcImage\");\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510122745342,
+			"name": "new.api.live.category",
+			"description": "",
+			"collectionId": "1cee889a-6756-af41-0dc5-e9523c017dc9",
+			"responses": []
+		}
+	]
+}

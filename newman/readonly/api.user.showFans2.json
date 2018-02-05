@@ -1,0 +1,70 @@
+{
+	"id": "9f829341-5f12-e289-617c-2ad68d607be5",
+	"name": "我的页面-粉丝",
+	"description": "",
+	"order": [
+		"5888f672-6e9a-3536-8073-6f11acd101a6"
+	],
+	"folders": [],
+	"timestamp": 1504765210814,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "5888f672-6e9a-3536-8073-6f11acd101a6",
+			"headers": "",
+			"url": "https://{{host}}/api/user/showFans2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "customerId",
+					"value": "67926",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 20041;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510122119046,
+			"name": "api.user.showFans2",
+			"description": "",
+			"collectionId": "9f829341-5f12-e289-617c-2ad68d607be5",
+			"responses": []
+		}
+	]
+}

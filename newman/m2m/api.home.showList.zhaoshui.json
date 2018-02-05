@@ -1,0 +1,76 @@
+{
+	"id": "e90b1d12-fb6c-402c-4596-e6a27e1b4405",
+	"name": "首页-找谁下拉刷新",
+	"description": "",
+	"order": [
+		"026d6df5-24a2-1bc9-8a60-9e691bc7e008"
+	],
+	"folders": [],
+	"timestamp": 1504594076210,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "026d6df5-24a2-1bc9-8a60-9e691bc7e008",
+			"headers": "",
+			"url": "https://{{host}}/api/home/showList",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "{{sinceId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "listType",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504599522216,
+			"name": "api.home.showList.zhaoshui",
+			"description": "",
+			"collectionId": "e90b1d12-fb6c-402c-4596-e6a27e1b4405",
+			"responses": []
+		}
+	]
+}

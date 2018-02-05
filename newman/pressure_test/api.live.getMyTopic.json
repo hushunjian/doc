@@ -1,0 +1,67 @@
+{
+	"id": "a8abfdea-2466-b6a4-6fa9-e5d5f00a6db3",
+	"name": "王国互动页",
+	"requests": [
+		{
+			"id": "5b03c5fd-3a4d-fd78-4b79-aa87a6bb7d85",
+			"headers": "",
+			"url": "https://{{host}}/api/live/getMyTopic",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a8abfdea-2466-b6a4-6fa9-e5d5f00a6db3",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "3.0.5.0515",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "updateTime",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip ",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.live.getMyTopic",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1508920523049,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	],
+	"order": [
+		"5b03c5fd-3a4d-fd78-4b79-aa87a6bb7d85"
+	],
+	"timestamp": 1508920523050
+}

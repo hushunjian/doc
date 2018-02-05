@@ -1,0 +1,70 @@
+{
+	"id": "710601e8-5f27-da11-6172-2fb5933c52bb",
+	"name": "首页-广场",
+	"description": "",
+	"order": [
+		"01be81b0-a65f-5475-ac55-748cce383821"
+	],
+	"folders": [],
+	"timestamp": 1504594160543,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "01be81b0-a65f-5475-ac55-748cce383821",
+			"headers": "",
+			"url": "https://{{host}}/api/home/newest",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "{{sinceId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504599477602,
+			"name": "api.home.newest",
+			"description": "",
+			"collectionId": "710601e8-5f27-da11-6172-2fb5933c52bb",
+			"responses": []
+		}
+	]
+}

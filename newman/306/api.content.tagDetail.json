@@ -1,0 +1,82 @@
+{
+	"id": "886f29ce-a3e8-6ae2-009d-e50152a55c4c",
+	"name": "新标签详情",
+	"description": "",
+	"order": [
+		"e08428a6-7651-a2bc-98b0-0da0ffc682eb"
+	],
+	"folders": [],
+	"timestamp": 1507686629822,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "e08428a6-7651-a2bc-98b0-0da0ffc682eb",
+			"headers": "",
+			"url": "https://{{host}}/api/content/tagDetail",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channe}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tagId",
+					"value": "190",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tagName",
+					"value": "非典型性话痨",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509605717250,
+			"name": "api.content.tagDetail",
+			"description": "",
+			"collectionId": "886f29ce-a3e8-6ae2-009d-e50152a55c4c",
+			"responses": []
+		}
+	]
+}

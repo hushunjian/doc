@@ -1,0 +1,65 @@
+{
+	"id": "70e91817-9328-246b-3b09-7aeb4f63e02c",
+	"name": "获取用户资料",
+	"description": "",
+	"order": [
+		"6ee9f62d-62ab-bda7-e038-f423c945ab2c"
+	],
+	"folders": [],
+	"timestamp": 1509605970203,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "6ee9f62d-62ab-bda7-e038-f423c945ab2c",
+			"headers": "",
+			"url": "https://{{host}}/api/user/getUserProfile",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "70e91817-9328-246b-3b09-7aeb4f63e02c",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "ok",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.user.getUserProfile",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1509605984960,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

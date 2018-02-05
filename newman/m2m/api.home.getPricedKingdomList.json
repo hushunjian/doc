@@ -1,0 +1,75 @@
+{
+	"id": "48844d09-c739-5612-44f5-feedba898c78",
+	"name": "王国估值排行",
+	"description": "",
+	"order": [
+		"b54fcf48-fa2d-7737-b12d-65a21ebb9d2c"
+	],
+	"folders": [],
+	"timestamp": 1504602766139,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "b54fcf48-fa2d-7737-b12d-65a21ebb9d2c",
+			"headers": "",
+			"url": "https://{{host}}/api/home/getPricedKingdomList",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{metome}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "{{page}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "{{pageSize}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504602916430,
+			"name": "api.home.getPricedKingdomList",
+			"description": "",
+			"collectionId": "48844d09-c739-5612-44f5-feedba898c78",
+			"responses": []
+		}
+	]
+}

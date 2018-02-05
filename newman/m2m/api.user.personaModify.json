@@ -1,0 +1,77 @@
+{
+	"id": "e064b64a-c461-aa7b-c4da-39327db81af9",
+	"name": "修改个人资料兴趣爱好",
+	"description": "",
+	"order": [
+		"0d39e4f3-8112-3668-72ba-c6fe8ccb5fa7"
+	],
+	"folders": [],
+	"timestamp": 1504764824946,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0d39e4f3-8112-3668-72ba-c6fe8ccb5fa7",
+			"headers": "",
+			"url": "https://{{host}}/api/user/personaModify",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e064b64a-c461-aa7b-c4da-39327db81af9",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "params",
+					"value": "94,80,104,81,84",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.user.personaModify",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504764844513,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

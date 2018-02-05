@@ -1,0 +1,65 @@
+{
+	"id": "ea00fb83-5afc-5134-0cdf-6fb665f6c5e0",
+	"name": "日签",
+	"description": "",
+	"order": [
+		"027ede86-e70a-3ce4-5e12-2cbe9ff7411a"
+	],
+	"folders": [],
+	"timestamp": 1504771818406,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "027ede86-e70a-3ce4-5e12-2cbe9ff7411a",
+			"headers": "",
+			"url": "https://{{host}}/api/live/getDaySignInfo",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ea00fb83-5afc-5134-0cdf-6fb665f6c5e0",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.live.getDaySignInfo",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504771948399,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

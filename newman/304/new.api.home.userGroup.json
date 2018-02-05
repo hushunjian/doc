@@ -1,0 +1,70 @@
+{
+	"id": "21e9b209-863f-146c-1e64-d3598966d713",
+	"name": "new.api.home.userGroup",
+	"description": "",
+	"order": [
+		"6bfb1068-7846-71be-b9fd-2c2da1b6dee7"
+	],
+	"folders": [],
+	"timestamp": 1505789387857,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "6bfb1068-7846-71be-b9fd-2c2da1b6dee7",
+			"headers": "",
+			"url": "https://{{host}}/api/home/userGroup",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 300ms\"] = responseTime < 300;\n\ntests[\"Body matches vip\"] = responseBody.has(\"vip\");",
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"time": 1505788486329,
+			"name": "new.api.home.userGroup",
+			"description": "",
+			"collectionId": "21e9b209-863f-146c-1e64-d3598966d713",
+			"responses": []
+		}
+	]
+}

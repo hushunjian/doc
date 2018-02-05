@@ -1,0 +1,83 @@
+{
+	"id": "dc041dd7-20e0-7974-7e5f-de0ac1f127ed",
+	"name": "提交选择情绪",
+	"description": "",
+	"order": [
+		"7397d1ef-7b47-ef8b-84de-cbc858ea1219"
+	],
+	"folders": [],
+	"timestamp": 1504770350633,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "7397d1ef-7b47-ef8b-84de-cbc858ea1219",
+			"headers": "",
+			"url": "https://{{host}}/api/user/submitEmotion",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "dc041dd7-20e0-7974-7e5f-de0ac1f127ed",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "emotionId",
+					"value": "13",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "freeValue",
+					"value": "55",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "happyValue",
+					"value": "77",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.user.submitEmotion",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504770637860,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

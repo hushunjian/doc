@@ -1,0 +1,88 @@
+{
+	"id": "df26ab67-a13a-86a3-9761-8c112b609284",
+	"name": "标签详情-上升最快",
+	"description": "",
+	"order": [
+		"13f0412a-a6a3-4f9f-53ff-335de5509c1a"
+	],
+	"folders": [],
+	"timestamp": 1504597108095,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "13f0412a-a6a3-4f9f-53ff-335de5509c1a",
+			"headers": "",
+			"url": "https://{{host}}/api/home/tagDetailList",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tagName",
+					"value": "旅行是我的态度",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "{{page}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "{{pageSize}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "order",
+					"value": "new",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504599454938,
+			"name": "api.home.tagDetailList.new",
+			"description": "",
+			"collectionId": "df26ab67-a13a-86a3-9761-8c112b609284",
+			"responses": []
+		}
+	]
+}

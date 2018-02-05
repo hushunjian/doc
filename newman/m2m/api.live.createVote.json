@@ -1,0 +1,95 @@
+{
+	"id": "6a7ea4c8-7979-387b-890a-274cd22e2059",
+	"name": "王国详情创建投票",
+	"description": "",
+	"order": [
+		"0c9a50bd-9a76-fe3b-bfef-c84b20a49a98"
+	],
+	"folders": [],
+	"timestamp": 1504683614858,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0c9a50bd-9a76-fe3b-bfef-c84b20a49a98",
+			"headers": "",
+			"url": "https://{{host}}/api/live/createVote",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6a7ea4c8-7979-387b-890a-274cd22e2059",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "7880",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "source",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "xixihaha",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "option",
+					"value": "125;haha",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.live.createVote",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504683807570,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200137;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

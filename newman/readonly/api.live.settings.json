@@ -1,0 +1,71 @@
+{
+	"id": "040247f9-49e2-b083-50c9-e0e87e0bdbf6",
+	"name": "王国设置",
+	"description": "",
+	"order": [
+		"c58a0949-cfeb-0b04-89f8-8ab7af5760bf"
+	],
+	"folders": [],
+	"timestamp": 1504680182686,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "c58a0949-cfeb-0b04-89f8-8ab7af5760bf",
+			"headers": "",
+			"url": "https://{{host}}/api/live/settings",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{verison}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topicId",
+					"value": "70518",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 500ms\"] = responseTime < 500;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510112336165,
+			"name": "api.live.settings",
+			"description": "",
+			"collectionId": "040247f9-49e2-b083-50c9-e0e87e0bdbf6",
+			"responses": []
+		}
+	]
+}

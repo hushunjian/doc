@@ -1,0 +1,71 @@
+{
+	"id": "61a1908b-b2df-354f-960e-2397ab7e64a7",
+	"name": "朋友圈",
+	"description": "",
+	"order": [
+		"5b410093-5d24-85e4-915f-79b889073708"
+	],
+	"folders": [],
+	"timestamp": 1504686883503,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "5b410093-5d24-85e4-915f-79b889073708",
+			"headers": "",
+			"url": "https://{{host}}/api/home/attention",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "61a1908b-b2df-354f-960e-2397ab7e64a7",
+			"data": [
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "version",
+					"value": "{{version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "{{channel}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "is_skip",
+					"value": "{{is_skip}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sinceId",
+					"value": "-1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "api.home.attention",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1504686986788,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.code === 200;\n\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
